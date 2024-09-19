@@ -1,0 +1,2211 @@
+﻿[
+  {
+    "pron": ["Rahane"],
+    "kai": "Rahan",
+    "ind": "Abang",
+    "kai_syns": ["Kaka"],
+    "ind_syns": ["Kakak"],
+    "sents": ["Ketika kecil, abang saya sering membantu ibu di dapur."]
+  },
+  {
+    "pron": ["Au"],
+    "kai": "Au",
+    "ind": "Aku",
+    "kai_syns": ["Beta"],
+    "ind_syns": ["Saya"],
+    "sents": ["Aku ingin mencoba makanan baru di restoran yang baru buka."]
+  },
+  {
+    "pron": ["Amane"],
+    "kai": "Aman",
+    "ind": "Aman",
+    "kai_syns": ["Salamat"],
+    "ind_syns": ["Selamat"],
+    "sents": [
+      "Selama pandemi, penting untuk menjaga jarak agar tetap aman dari penularan."
+    ]
+  },
+  {
+    "pron": ["Piri"],
+    "kai": "Piri",
+    "ind": "Ambil",
+    "kai_syns": ["Piri"],
+    "ind_syns": ["Raih"],
+    "sents": ["Aku harus ambil keputusan yang tepat untuk masa depan."]
+  },
+  {
+    "pron": ["Ana'u"],
+    "kai": "Ana'u",
+    "ind": "Anak",
+    "kai_syns": ["Ana'u"],
+    "ind_syns": ["Buah hati"],
+    "sents": [
+      "Anak itu sangat pintar dan selalu mendapat nilai bagus di sekolah."
+    ]
+  },
+  {
+    "pron": ["Anine"],
+    "kai": "Anin",
+    "ind": "Angin",
+    "kai_syns": ["Anin"],
+    "ind_syns": ["-"],
+    "sents": ["Ada malam hari, angin kencang bertiup di luar rumah."]
+  },
+  {
+    "pron": ["Hiti'ele"],
+    "kai": "Hiti",
+    "ind": "Angka",
+    "kai_syns": ["hiti"],
+    "ind_syns": ["Nomor"],
+    "sents": ["Angka penjualan bulan ini meningkat dibandingkan bulan lalu."]
+  },
+  {
+    "pron": ["Asu"],
+    "kai": "Asu",
+    "ind": "Anjing",
+    "kai_syns": ["Asu"],
+    "ind_syns": ["Anjing"],
+    "sents": [
+      "Anjing tetangga selalu menggonggong ketika ada orang lewat di depan rumahnya."
+    ]
+  },
+  {
+    "pron": ["Salo"],
+    "kai": "Salo",
+    "ind": "Apa",
+    "kai_syns": ["Salo"],
+    "ind_syns": ["-"],
+    "sents": ["Apa yang kamu lakukan di sini?."]
+  },
+  {
+    "pron": ["Hau"],
+    "kai": "Hau",
+    "ind": "Api",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Api membara di dalam tungku perapian."]
+  },
+  {
+    "pron": ["Ate'0"],
+    "kai": "Ate",
+    "ind": "Atap",
+    "kai_syns": ["-"],
+    "ind_syns": ["Genting"],
+    "sents": ["Atap saya bocor."]
+  },
+  {
+    "pron": ["Apotek'e"],
+    "kai": "Apotek",
+    "ind": "Apotek",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Saya pergi ke Apotek untuk membeli obat."]
+  },
+  {
+    "pron": ["Asale"],
+    "kai": "Asale",
+    "ind": "Asal",
+    "kai_syns": ["-"],
+    "ind_syns": ["Sumber"],
+    "sents": ["Aku berasal dari Indonesia."]
+  },
+  {
+    "pron": ["Manisa"],
+    "kai": "Manisa",
+    "ind": "Asli",
+    "kai_syns": ["-"],
+    "ind_syns": ["Nyata"],
+    "sents": ["Sepatu itu asli dari Indonesia."]
+  },
+  {
+    "pron": ["Lotoha'ha"],
+    "kai": "Lotoha'ha",
+    "ind": "Atas",
+    "kai_syns": ["-"],
+    "ind_syns": ["Tinggi"],
+    "sents": ["Besok aku dan teman-teman naik ke atas bukit."]
+  },
+  {
+    "pron": ["He'he"],
+    "kai": "He'he",
+    "ind": "Atur",
+    "kai_syns": ["-"],
+    "ind_syns": ["Tata"],
+    "sents": ["Tolong atur rencana dengan baaik."]
+  },
+  {
+    "pron": ["Au wama u"],
+    "kai": "Au wama u",
+    "ind": "Ayah",
+    "kai_syns": ["-"],
+    "ind_syns": ["Bapak"],
+    "sents": ["Ayah selalu memberikan nasihat yang bijak."]
+  },
+  {
+    "pron": ["Make"],
+    "kai": "Make",
+    "ind": "Ayo",
+    "kai_syns": ["-"],
+    "ind_syns": ["Mari"],
+    "sents": ["Ayo pergi ke sana."]
+  },
+  {
+    "pron": ["Badange"],
+    "kai": "Badange",
+    "ind": "Badan",
+    "kai_syns": ["-"],
+    "ind_syns": ["Tubuh"],
+    "sents": ["Badan saya sangat pegal."]
+  },
+  {
+    "pron": ["Ahwene"],
+    "kai": "Ahwene",
+    "ind": "Bagaimana",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Bagaimana dengan rencana kita? ."]
+  },
+  {
+    "pron": ["Mangahinya"],
+    "kai": "Mangahinya",
+    "ind": "Bagus",
+    "kai_syns": ["-"],
+    "ind_syns": ["Baik"],
+    "sents": ["Kerja kamu sangat bagus."]
+  },
+  {
+    "pron": ["Manara"],
+    "kai": "Manara",
+    "ind": "Bahan",
+    "kai_syns": ["-"],
+    "ind_syns": ["Senang"],
+    "sents": ["Aku sudah menyiapkan bahan-bahan untuk memasak."]
+  },
+  {
+    "pron": ["Halau"],
+    "kai": "Halau",
+    "ind": "Bahu",
+    "kai_syns": ["-"],
+    "ind_syns": ["Pundak"],
+    "sents": ["Bahuku sangat sakit."]
+  },
+  {
+    "pron": ["Ma'i"],
+    "kai": "Ma'i",
+    "ind": "Baik",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Kamu sangat Baik."]
+  },
+  {
+    "pron": ["Lapune"],
+    "kai": "Lapun",
+    "ind": "Baju",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Baju kamu sangat indah."]
+  },
+  {
+    "pron": ["Kunure"],
+    "kai": "Kunu",
+    "ind": "bakar",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Rumahku Terbakar."]
+  },
+  {
+    "pron": ["Poso"],
+    "kai": "Poso",
+    "ind": "Bakti",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Ayo kerja bakti."]
+  },
+  {
+    "pron": ["Hale'e"],
+    "kai": "hale'e",
+    "ind": "Balik",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Ayo balik ke kelas masing-masing."]
+  },
+  {
+    "pron": ["Tomola"],
+    "kai": "Tomola",
+    "ind": "Bumbu",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Campurkan semua bumbu ke dalam sayur itu."]
+  },
+  {
+    "pron": ["Repu"],
+    "kai": "Repu",
+    "ind": "Banyak",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Aku akan memberimu uang yang banyak."]
+  },
+  {
+    "pron": ["Manara"],
+    "kai": "Manara",
+    "ind": "Barang",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Tolong masukkan barang-barang itu ke gudang."]
+  },
+  {
+    "pron": ["Horu"],
+    "kai": "Horu",
+    "ind": "Baru",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Aku baru saja menyelesaikan pekerjaanku."]
+  },
+  {
+    "pron": ["Papota"],
+    "kai": "Papota",
+    "ind": "Basah",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["bajuku basah."]
+  },
+  {
+    "pron": ["Hatu"],
+    "kai": "Hatu",
+    "ind": "Batu",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Batu itu sangat besar."]
+  },
+  {
+    "pron": ["Rawa"],
+    "kai": "Rawa",
+    "ind": "Bawa",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Akan ku bawakan Minum untukmu."]
+  },
+  {
+    "pron": ["Keri"],
+    "kai": "Keri",
+    "ind": "Bayar",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Tolong bayar semua hutang-hutangmu sekarang."]
+  },
+  {
+    "pron": ["Aopol"],
+    "kai": "Aopol",
+    "ind": "Bayi",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Bayimu sangat cantik."]
+  },
+  {
+    "pron": ["Halemuri"],
+    "kai": "Halemuri",
+    "ind": "Belakang",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Aku akan duduk dibelakang."]
+  },
+  {
+    "pron": ["Kahe"],
+    "kai": "Kahe",
+    "ind": "Beli",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Tolong belikan saya pakaian yang saya suka."]
+  },
+  {
+    "pron": ["Tausa"],
+    "kai": "Tausa",
+    "ind": "Belum",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Aku belum bisa melupakan kejadian itu."]
+  },
+  {
+    "pron": ["Manenu"],
+    "kai": "Manenu",
+    "ind": "Berat",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Beban yang aku pikul sangatlah berat."]
+  },
+  {
+    "pron": ["Repe"],
+    "kai": "Repe",
+    "ind": "Beri",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Tolong beri aku segelas air."]
+  },
+  {
+    "pron": ["Irai"],
+    "kai": "Irai",
+    "ind": "Besar",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Rumahmu sangat besar."]
+  },
+  {
+    "pron": ["Hoake"],
+    "kai": "Hoa",
+    "ind": "Bicara",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Aku ingin bicara dengannya."]
+  },
+  {
+    "pron": ["Bidange"],
+    "kai": "Bidang",
+    "ind": "Bidang",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Aku bekerja di bidang Otomotif."]
+  },
+  {
+    "pron": ["Hatuele"],
+    "kai": "Hatuele",
+    "ind": "Biji",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Itu adalah biji dari buah Rambutan."]
+  },
+  {
+    "pron": ["Puna"],
+    "kai": "Puna",
+    "ind": "Buat",
+    "kai_syns": ["-"],
+    "ind_syns": ["Cipta"],
+    "sents": ["Tolong buatkan aku teh hangat."]
+  },
+
+  {
+    "pron": ["Ninu"],
+    "kai": "Ninu",
+    "ind": "Mabuk",
+    "kai_syns": ["Mabo"],
+    "ind_syns": ["Mabo"],
+    "sents": ["Jangan pernah mengemudi saat mabuk, itu sangat berbahaya"]
+  },
+  {
+    "pron": ["Pamana"],
+    "kai": "Pamana",
+    "ind": "Makan",
+    "kai_syns": ["ane"],
+    "ind_syns": ["Makan"],
+    "sents": [
+      "Saya suka makan salad untuk makan siang karena sehat dan menyegarkan"
+    ]
+  },
+  {
+    "pron": ["Molon"],
+    "kai": "Molon",
+    "ind": "Malam",
+    "kai_syns": ["Molone"],
+    "ind_syns": ["Larut"],
+    "sents": ["Setiap malam, saya suka membaca buku sebelum tidur"]
+  },
+  {
+    "pron": ["Ipamalas"],
+    "kai": "ipamalas",
+    "ind": "Malas",
+    "kai_syns": ["Pamalase"],
+    "ind_syns": ["Lemas"],
+    "sents": ["Jangan menjadi malas dalam mengejar impianmu, teruslah berusaha"]
+  },
+  {
+    "pron": ["Pasomi"],
+    "kai": "Pasomi",
+    "ind": "Malu",
+    "kai_syns": ["inpasomi"],
+    "ind_syns": ["Sungkan"],
+    "sents": [
+      "Wajahnya memerah karena malu saat dipuji di depan teman-temannya"
+    ]
+  },
+  {
+    "pron": ["Wene"],
+    "kai": "Wene",
+    "ind": "Mana",
+    "kai_syns": ["wene"],
+    "ind_syns": ["dimana"],
+    "sents": ["Di mana kamu tinggal"]
+  },
+  {
+    "pron": ["Pahoi"],
+    "kai": "Pahoi",
+    "ind": "Mandi",
+    "kai_syns": ["pahoike"],
+    "ind_syns": ["Bersiram"],
+    "sents": ["Mandi di pantai adalah aktivitas favorit kami saat liburan."]
+  },
+  {
+    "pron": ["Wai-wai"],
+    "kai": "Wai-wai",
+    "ind": "Mangga",
+    "kai_syns": ["-"],
+    "ind_syns": ["Mangga"],
+    "sents": ["Aku baru saja membeli beberapa mangga dari pasar"]
+  },
+  {
+    "pron": ["Masuma"],
+    "kai": "Masuma",
+    "ind": "Manis",
+    "kai_syns": ["-"],
+    "ind_syns": ["Enak"],
+    "sents": ["Rasa kue buatan ibu begitu manis dan lezat"]
+  },
+  {
+    "pron": ["Mansia"],
+    "kai": "Mansia",
+    "ind": "Manusia",
+    "kai_syns": ["-"],
+    "ind_syns": ["Orang"],
+    "sents": [
+      "Kita semua sebagai manusia harus saling menghormati satu sama lain"
+    ]
+  },
+  {
+    "pron": ["Make"],
+    "kai": "Make",
+    "ind": "Mari",
+    "kai_syns": ["-"],
+    "ind_syns": ["Sini"],
+    "sents": ["Mari kita bersyukur atas semua nikmat yang telah kita terima"]
+  },
+  {
+    "pron": ["Jubahang"],
+    "kai": "Jubahang",
+    "ind": "Masalah",
+    "kai_syns": ["Masaala"],
+    "ind_syns": ["Konflik"],
+    "sents": ["Kita perlu duduk bersama dan mencari solusi untuk masalah ini"]
+  },
+  {
+    "pron": ["Nusuk"],
+    "kai": "Nusu",
+    "ind": "Masuk",
+    "kai_syns": ["Nusuke"],
+    "ind_syns": ["Memasuki"],
+    "sents": ["Pengunjung harus membayar tiket sebelum masuk ke dalam museum"]
+  },
+  {
+    "pron": ["Mamatan"],
+    "kai": "Mamatan",
+    "ind": "Mati",
+    "kai_syns": ["-"],
+    "ind_syns": ["Tiada"],
+    "sents": ["Bunga itu mati karena tidak disiram dalam beberapa hari"]
+  },
+  {
+    "pron": ["Mamata"],
+    "kai": "Mamata",
+    "ind": "Mayat",
+    "kai_syns": ["Meninggal"],
+    "ind_syns": ["Wafat"],
+    "sents": ["kemarin saya pergi melayat"]
+  },
+  {
+    "pron": ["Kou"],
+    "kai": "kou'e",
+    "ind": "Melihat",
+    "kai_syns": ["-"],
+    "ind_syns": ["Memandang"],
+    "sents": ["Saya melihat matahari terbit di ufuk timur pagi ini"]
+  },
+  {
+    "pron": ["Ole"],
+    "kai": "Ole",
+    "ind": "Memang",
+    "kai_syns": ["-"],
+    "ind_syns": ["Ya"],
+    "sents": ["Memang benar, cuaca hari ini sangat panas"]
+  },
+  {
+    "pron": ["Puna"],
+    "kai": "Puna",
+    "ind": "Membuat",
+    "kai_syns": ["-"],
+    "ind_syns": ["Menyusun"],
+    "sents": ["Kami membuat proposal untuk proyek besar tersebut"]
+  },
+  {
+    "pron": ["Riye"],
+    "kai": "Riye",
+    "ind": "Mencari",
+    "kai_syns": ["RIyeke"],
+    "ind_syns": ["Menyari"],
+    "sents": ["Turis itu sedang mencari petunjuk arah di peta kota"]
+  },
+  {
+    "pron": ["Riye"],
+    "kai": "Riye",
+    "ind": "Mencari",
+    "kai_syns": ["RIyeke"],
+    "ind_syns": ["Menyari"],
+    "sents": ["Turis itu sedang mencari petunjuk arah di peta kota"]
+  },
+  {
+    "pron": ["Kaleku"],
+    "kai": "Kaleku",
+    "ind": "Mendidih",
+    "kai_syns": ["-"],
+    "ind_syns": ["Mendidihkan"],
+    "sents": ["Ibu sedang mendidihkan air untuk membuat teh hangat"]
+  },
+  {
+    "pron": ["Amaka"],
+    "kai": "Amakaele",
+    "ind": "Mentah",
+    "kai_syns": ["-"],
+    "ind_syns": ["kurang matang"],
+    "sents": ["Ibu memotong sayuran mentah untuk salad"]
+  },
+  {
+    "pron": ["Mani"],
+    "kai": "Mani",
+    "ind": "Mimpi",
+    "kai_syns": ["Maniele"],
+    "ind_syns": ["Imaji"],
+    "sents": ["Mimpi saya semalam sangat aneh dan sulit diingat"]
+  },
+  {
+    "pron": ["Ahad"],
+    "kai": "Ahade",
+    "ind": "Minggu",
+    "kai_syns": ["-"],
+    "ind_syns": ["Akhir Pekan"],
+    "sents": ["Saya memiliki rencana liburan selama satu minggu ke pantai"]
+  },
+  {
+    "pron": ["Pala"],
+    "kai": "Pala",
+    "ind": "Minta",
+    "kai_syns": ["-"],
+    "ind_syns": ["Miminta"],
+    "sents": ["Mohon minta keterangan lebih lanjut mengenai prosedur ini"]
+  },
+  {
+    "pron": ["Ninu"],
+    "kai": "Ninu",
+    "ind": "Minum",
+    "kai_syns": ["-"],
+    "ind_syns": ["Menghirup"],
+    "sents": ["Saya suka minum juz"]
+  },
+  {
+    "pron": ["Ilel"],
+    "kai": "Ilel",
+    "ind": "Miring",
+    "kai_syns": ["ninile"],
+    "ind_syns": ["Menyamping"],
+    "sents": ["Dia mendapati gambar itu tergantung miring di dinding"]
+  },
+  {
+    "pron": ["Opai"],
+    "kai": "Opai",
+    "ind": "Muda",
+    "kai_syns": ["opaele"],
+    "ind_syns": ["Remaja"],
+    "sents": ["Mangga itu masi muda"]
+  },
+  {
+    "pron": ["Huran"],
+    "kai": "Huran",
+    "ind": "Musim",
+    "kai_syns": ["-"],
+    "ind_syns": ["Waktu"],
+    "sents": ["Sekarang Musim buah di tempat tinggal saya"]
+  },
+  {
+    "pron": ["Ka'a"],
+    "kai": "Ka'a",
+    "ind": "Naik",
+    "kai_syns": ["-"],
+    "ind_syns": ["Mendaki"],
+    "sents": [
+      "Saya suka naik gunung karena bisa menikmati pemandangan yang indah"
+    ]
+  },
+  {
+    "pron": ["Nanasi"],
+    "kai": "Nanasi",
+    "ind": "Nanas",
+    "kai_syns": ["-"],
+    "ind_syns": ["Nenas"],
+    "sents": ["Saya suka makan buah nenas"]
+  },
+  {
+    "pron": ["Hala"],
+    "kai": "Hala",
+    "ind": "Nasi",
+    "kai_syns": ["Beras"],
+    "ind_syns": ["Beras"],
+    "sents": ["Ibu menyuruh saya memasak nasi"]
+  },
+  {
+    "pron": ["Bahesan"],
+    "kai": "Bahesane",
+    "ind": "Nisan",
+    "kai_syns": ["-"],
+    "ind_syns": ["Papan nama"],
+    "sents": ["Kemarin saya mencetak nisan di tempat percetakan"]
+  },
+  {
+    "pron": ["Moune"],
+    "kai": "Moune",
+    "ind": "Obat",
+    "kai_syns": ["Ramuna"],
+    "ind_syns": ["Resep"],
+    "sents": ["Setelah minum obat, sakit kepala saya mereda"]
+  },
+  {
+    "pron": ["Omba"],
+    "kai": "Omba",
+    "ind": "Ombak",
+    "kai_syns": ["Gelombang"],
+    "ind_syns": ["Arus"],
+    "sents": ["Perahu kecil itu bergoyang-goyang di atas ombak"]
+  },
+  {
+    "pron": ["Hoa"],
+    "kai": "Hoahuri",
+    "ind": "Omong",
+    "kai_syns": ["Bicara"],
+    "ind_syns": ["Ngomong"],
+    "sents": ["Aku nggak terlalu suka ngomong di depan umum"]
+  },
+  {
+    "pron": ["Mansia"],
+    "kai": "Mansia",
+    "ind": "Orang",
+    "kai_syns": ["-"],
+    "ind_syns": ["Manusia"],
+    "sents": [
+      "Manusia adalah makhluk sosial yang membutuhkan interaksi dengan sesama"
+    ]
+  },
+  {
+    "pron": ["Amalo"],
+    "kai": "Amalo",
+    "ind": "Pahala",
+    "kai_syns": ["Amal"],
+    "ind_syns": ["Manusia"],
+    "sents": ["Pahala dari doa orang tua sangat besar"]
+  },
+  {
+    "pron": ["Maita"],
+    "kai": "Maita",
+    "ind": "Pahit",
+    "kai_syns": ["Pait"],
+    "ind_syns": ["Amis"],
+    "sents": ["Kopi buatan ibuku pahit"]
+  },
+  {
+    "pron": ["Momo"],
+    "kai": "Momo",
+    "ind": "Paman",
+    "kai_syns": ["Om"],
+    "ind_syns": ["Bapak saudara"],
+    "sents": ["Paman saya adalah seorang yang penyayang dan suka bercanda"]
+  },
+  {
+    "pron": ["Kunu"],
+    "kai": "Kunu",
+    "ind": "Panas",
+    "kai_syns": ["Kunuwasat"],
+    "ind_syns": ["Panasnya"],
+    "sents": ["Hari ini cuaca sangat panas"]
+  },
+  {
+    "pron": ["Meite"],
+    "kai": "Meite",
+    "ind": "Pantai",
+    "kai_syns": ["Pante"],
+    "ind_syns": ["Laut"],
+    "sents": ["Saya ingin pergi ke pantai nanti"]
+  },
+  {
+    "pron": ["Tuel"],
+    "kai": "Tuele",
+    "ind": "Patah",
+    "kai_syns": ["Pata"],
+    "ind_syns": ["Rapuh"],
+    "sents": ["Kaca jendela itu patah karena terkena bola"]
+  },
+  {
+    "pron": ["Hisal"],
+    "kai": "Hisale",
+    "ind": "Pecah",
+    "kai_syns": ["Pica"],
+    "ind_syns": ["Hancur"],
+    "sents": ["Gelas itu pecah ketika jatuh ke lantai"]
+  },
+  {
+    "pron": ["Kakasa"],
+    "kai": "Kakasa",
+    "ind": "Pedas",
+    "kai_syns": ["Padis"],
+    "ind_syns": ["Tajam"],
+    "sents": ["Sambal ini terasa pedas sekali"]
+  },
+  {
+    "pron": ["Poso"],
+    "kai": "Poso",
+    "ind": "Pekerjaan",
+    "kai_syns": ["Karja"],
+    "ind_syns": ["Tugas"],
+    "sents": ["Dosen memberikan pekerjaan kepada saya"]
+  },
+  {
+    "pron": ["Maru"],
+    "kai": "Maru",
+    "ind": "Pelan",
+    "kai_syns": ["Palang"],
+    "ind_syns": ["Lambat"],
+    "sents": ["Pelan-pelan saya akan menyelesikan tugas saya"]
+  },
+  {
+    "pron": ["Langganane"],
+    "kai": "Langganane",
+    "ind": "Pelanggang",
+    "kai_syns": ["Pembeli"],
+    "ind_syns": ["Klien"],
+    "sents": ["Pelanggang saya sangat banyak"]
+  },
+  {
+    "pron": ["Malawa"],
+    "kai": "Malawa",
+    "ind": "Pelari",
+    "kai_syns": ["-"],
+    "ind_syns": ["Lari-Lari"],
+    "sents": ["Saudara saya seorang pelari"]
+  },
+  {
+    "pron": ["Malawa"],
+    "kai": "Malawa",
+    "ind": "Pelari",
+    "kai_syns": ["-"],
+    "ind_syns": ["Lari-Lari"],
+    "sents": ["Saudara saya seorang pelari"]
+  },
+  {
+    "pron": ["Uruhuai"],
+    "kai": "Uruhuai",
+    "ind": "Pemimpin",
+    "kai_syns": ["Pimpinan'e"],
+    "ind_syns": ["Ketua"],
+    "sents": [
+      "Pimpinan baru organisasi tersebut berjanji akan membawa perubahan positif"
+    ]
+  },
+  {
+    "pron": ["Potlot"],
+    "kai": "Potlot",
+    "ind": "Pena",
+    "kai_syns": ["Pulpen"],
+    "ind_syns": ["Bolpoin"],
+    "sents": ["Pena itu mengeluarkan tinta biru yang indah"]
+  },
+  {
+    "pron": ["Apole"],
+    "kai": "Apole",
+    "ind": "Pendek",
+    "kai_syns": ["anai"],
+    "ind_syns": ["Mini"],
+    "sents": ["Anak itu memiliki rambut yang pendek dan rapi"]
+  },
+  {
+    "pron": ["Pamarinya"],
+    "kai": "Pamarinya",
+    "ind": "Pendiam",
+    "kai_syns": ["Diam"],
+    "ind_syns": ["Tertutup"],
+    "sents": [
+      "Dia dikenal sebagai orang yang pendiam dan jarang berbicara di depan umum"
+    ]
+  },
+  {
+    "pron": ["Sel"],
+    "kai": "Sel",
+    "ind": "Penjara",
+    "kai_syns": ["-"],
+    "ind_syns": ["Tertutup"],
+    "sents": ["Setelah terbukti bersalah, ia langsung dijebloskan ke penjara"]
+  },
+  {
+    "pron": ["Imai"],
+    "kai": "Imai,eya",
+    "ind": "Penyembuhan",
+    "kai_syns": ["barobat"],
+    "ind_syns": ["Terapi"],
+    "sents": ["Ibu saya dalam proses penyembuhan"]
+  },
+  {
+    "pron": ["Papaen"],
+    "kai": "Papaene",
+    "ind": "Pepaya",
+    "kai_syns": ["Papaya"],
+    "ind_syns": ["Kepaya"],
+    "sents": ["Saya suka makan pepaya"]
+  },
+  {
+    "pron": ["Manara"],
+    "kai": "Manara",
+    "ind": "Perabotan",
+    "kai_syns": ["Barang"],
+    "ind_syns": ["Peralatan"],
+    "sents": ["Perabotan di rumah itu sangat indah"]
+  },
+  {
+    "pron": ["Hatua"],
+    "kai": "Hatua'u",
+    "ind": "Perasaan",
+    "kai_syns": ["Rasa"],
+    "ind_syns": ["Batin"],
+    "sents": ["Perasaan saya sangat campur aduk setelah mendengar berita itu"]
+  },
+  {
+    "pron": ["Palesi"],
+    "kai": "Palesi",
+    "ind": "Perdebatan",
+    "kai_syns": ["-"],
+    "ind_syns": ["Debat"],
+    "sents": [
+      "Perdebatan antara kedua kandidat itu sangat menarik untuk disimak"
+    ]
+  },
+  {
+    "pron": ["Mahaia"],
+    "kai": "Mahaia",
+    "ind": "Perjamuan",
+    "kai_syns": ["-"],
+    "ind_syns": ["Jamuan makanan"],
+    "sents": ["Saya sangat menikmati perjamuan malam itu"]
+  },
+  {
+    "pron": ["Kawena"],
+    "kai": "Kawena",
+    "ind": "Perkawinana",
+    "kai_syns": ["Nikah"],
+    "ind_syns": ["Akad Nikah"],
+    "sents": ["Perkawinan itu sangat mewah"]
+  },
+  {
+    "pron": ["Isirutesi"],
+    "kai": "Isirutuesi",
+    "ind": "Perkumpulan",
+    "kai_syns": ["Marutu"],
+    "ind_syns": ["Ikatan"],
+    "sents": ["Saya bergabung dengan perkumpulan mahasiswa"]
+  },
+  {
+    "pron": ["Ibarmaenge"],
+    "kai": "Ibarmaenge",
+    "ind": "Permainan",
+    "kai_syns": ["Barmaeng"],
+    "ind_syns": ["Mainana"],
+    "sents": ["Permainan itu sangat seru"]
+  },
+  {
+    "pron": ["Asbon"],
+    "kai": "Asbon",
+    "ind": "Permen",
+    "kai_syns": ["Gula-gula"],
+    "ind_syns": ["Bon-Bon"],
+    "sents": ["Saya suka makan permen"]
+  },
+  {
+    "pron": ["Etana"],
+    "kai": "Etana",
+    "ind": "Pernah",
+    "kai_syns": ["-"],
+    "ind_syns": ["Suatu kali"],
+    "sents": ["Saya pernah ke desa kailolo beberapa tahun yang lalu"]
+  },
+  {
+    "pron": ["Minyai"],
+    "kai": "Minyai",
+    "ind": "Pertama",
+    "kai_syns": ["-"],
+    "ind_syns": ["Awal"],
+    "sents": ["Ini adalah kali pertama saya mengunjungi kota ini"]
+  },
+  {
+    "pron": ["Bantueneke"],
+    "kai": "Bantueneke",
+    "ind": "Pertolongan",
+    "kai_syns": ["Bantu"],
+    "ind_syns": ["Tolong"],
+    "sents": ["Saya ingin meminta pertolongan"]
+  },
+  {
+    "pron": ["Tia"],
+    "kai": "Tia",
+    "ind": "Perut",
+    "kai_syns": ["Tia'i"],
+    "ind_syns": ["Panggul"],
+    "sents": ["Dia mengalami sakit perut setelah makan makanan pedas"]
+  },
+  {
+    "pron": ["Mansia wasi"],
+    "kai": "mansia wasi",
+    "ind": "Petani",
+    "kai_syns": ["-"],
+    "ind_syns": ["Pekebun"],
+    "sents": ["Ayah saya seorang petani"]
+  },
+  {
+    "pron": ["Tamelen"],
+    "kai": "Tamelen",
+    "ind": "Petir",
+    "kai_syns": ["Guntur"],
+    "ind_syns": ["Kilat"],
+    "sents": ["Saya takut akan petir"]
+  },
+  {
+    "pron": ["Mentanurui"],
+    "kai": "Mentanurui",
+    "ind": "Pintu",
+    "kai_syns": ["-"],
+    "ind_syns": ["Gapura"],
+    "sents": ["Tolong tutup pintu itu"]
+  },
+  {
+    "pron": ["Seit"],
+    "kai": "Seite",
+    "ind": "Pisau",
+    "kai_syns": ["Piso"],
+    "ind_syns": ["Golok"],
+    "sents": ["Pisau itu sangat tajam"]
+  },
+  {
+    "pron": ["Mahlo'otoi"],
+    "kai": "Mahlo'otoi",
+    "ind": "Polisi",
+    "kai_syns": ["-"],
+    "ind_syns": ["Polsek"],
+    "sents": ["Polisi itu mengejar pencuri yang melarikan diri"]
+  },
+  {
+    "pron": ["Hp"],
+    "kai": "Hp",
+    "ind": "Ponsel",
+    "kai_syns": ["-"],
+    "ind_syns": ["Handphon"],
+    "sents": ["Hp ku ini merek terbaru"]
+  },
+  {
+    "pron": ["Waa'o"],
+    "kai": "Waa'o",
+    "ind": "Posisi",
+    "kai_syns": ["Tempat"],
+    "ind_syns": ["Letak"],
+    "sents": ["Pemain bola itu berpindah posisi dari bek menjadi gelandang"]
+  },
+  {
+    "pron": ["Hita"],
+    "kai": "Hita",
+    "ind": "Potong",
+    "kai_syns": ["Iris"],
+    "ind_syns": ["Memotong"],
+    "sents": ["Saya suka potongan rambut pendek yang mudah dirawat"]
+  },
+  {
+    "pron": ["Gambare"],
+    "kai": "Gambare",
+    "ind": "Potret",
+    "kai_syns": ["Foto"],
+    "ind_syns": ["Sketsa"],
+    "sents": ["Saya suka memotret bunga"]
+  },
+  {
+    "pron": ["Malona"],
+    "kai": "Malona",
+    "ind": "Pria",
+    "kai_syns": ["Laki-laki"],
+    "ind_syns": ["Cowok"],
+    "sents": ["Pria itu sedang membaca buku di taman"]
+  },
+  {
+    "pron": ["Hola"],
+    "kai": "Hola",
+    "ind": "Pukul",
+    "kai_syns": ["-"],
+    "ind_syns": ["Bacok"],
+    "sents": ["Anak itu suka pukul drum di waktu luangnya"]
+  },
+  {
+    "pron": ["Reu"],
+    "kai": "Reu",
+    "ind": "Pulang",
+    "kai_syns": ["-"],
+    "ind_syns": ["Pergi balik"],
+    "sents": ["Saya akan pulang ke rumah setelah selesai kerja"]
+  },
+  {
+    "pron": ["Inyie"],
+    "kai": "Inyie",
+    "ind": "Punya",
+    "kai_syns": ["-"],
+    "ind_syns": ["Dapat"],
+    "sents": ["Kami punya rencana untuk liburan musim panas ini"]
+  },
+  {
+    "pron": ["Mahinya"],
+    "kai": "Mahinya",
+    "ind": "Putri",
+    "kai_syns": ["Perempuan"],
+    "ind_syns": ["Bidadari"],
+    "sents": ["Putri adalah seorang anak gadis desa yang cantik"]
+  },
+  {
+    "pron": ["Masyarakate"],
+    "kai": "Masyarakate",
+    "ind": "Rakyat",
+    "kai_syns": ["-"],
+    "ind_syns": ["Warga"],
+    "sents": [
+      "Masyarakat harus saling mendukung dalam membangun kehidupan yang lebih baik"
+    ]
+  },
+  {
+    "pron": ["Kahua"],
+    "kai": "Kahua",
+    "ind": "Ramai",
+    "kai_syns": ["Rame"],
+    "ind_syns": ["Warga"],
+    "sents": ["Saya tidak suka tempat yang ramai"]
+  },
+  {
+    "pron": ["Keura"],
+    "kai": "Keura",
+    "ind": "Rambut",
+    "kai_syns": ["-"],
+    "ind_syns": ["Helai"],
+    "sents": ["Rambut teman saya sangat bagus"]
+  },
+  {
+    "pron": ["Usaele"],
+    "kai": "Usael",
+    "ind": "Ratus",
+    "kai_syns": ["-"],
+    "ind_syns": ["Seratus"],
+    "sents": ["Apkah saya bisa meminjam uang kamu seratus"]
+  },
+  {
+    "pron": ["Tamange"],
+    "kai": "Tamange",
+    "ind": "Rekan",
+    "kai_syns": ["Teman"],
+    "ind_syns": ["Kawan"],
+    "sents": ["Saya dan rekan kerja saya pergi nonton bioskop"]
+  },
+  {
+    "pron": ["Haitiha"],
+    "kai": "Haitiha",
+    "ind": "Retak",
+    "kai_syns": ["-"],
+    "ind_syns": ["Reput"],
+    "sents": ["Dinding itu retak karena gempa semalam"]
+  },
+  {
+    "pron": ["Usaele"],
+    "kai": "Usaele",
+    "ind": "Ribuan",
+    "kai_syns": ["Saribu"],
+    "ind_syns": ["Banyak"],
+    "sents": [
+      "Ribuan orang berkumpul di lapangan untuk menyaksikan acara tersebut"
+    ]
+  },
+  {
+    "pron": ["Kahuaele"],
+    "kai": "Kahuaele",
+    "ind": "Ribu",
+    "kai_syns": ["-"],
+    "ind_syns": ["Banyak"],
+    "sents": ["Saya meminjam Uang seribu di teman saya"]
+  },
+  {
+    "pron": ["Barotu"],
+    "kai": "Barotu",
+    "ind": "Roti",
+    "kai_syns": ["-"],
+    "ind_syns": ["Tepung"],
+    "sents": ["Saya Suka makan roti"]
+  },
+  {
+    "pron": ["Walang"],
+    "kai": "Walang",
+    "ind": "Rumah",
+    "kai_syns": ["Teput"],
+    "ind_syns": ["Bangunan"],
+    "sents": ["Rumah saya yang baru belum di huni"]
+  },
+  {
+    "pron": ["Huta"],
+    "kai": "Huta",
+    "ind": "Rumput",
+    "kai_syns": ["Rumpu"],
+    "ind_syns": ["Sampah"],
+    "sents": ["Rumput di halamn rumahku sudah di potong"]
+  },
+  {
+    "pron": ["Roboh"],
+    "kai": "Roboh",
+    "ind": "Runtuh",
+    "kai_syns": ["Terubuh"],
+    "ind_syns": ["Hancur"],
+    "sents": ["Dinding rumah ku runtuh"]
+  },
+  {
+    "pron": ["Haipunale"],
+    "kai": "Haipunale",
+    "ind": "Rusak",
+    "kai_syns": ["-"],
+    "ind_syns": ["Tidak layak"],
+    "sents": ["hendpone saya rusak"]
+  },
+  {
+    "pron": ["Sabdu"],
+    "kai": "Sabdu",
+    "ind": "Sabtu",
+    "kai_syns": ["-"],
+    "ind_syns": ["Akhir pekan"],
+    "sents": ["Nanti kita ke kampus hari sabtu"]
+  },
+  {
+    "pron": ["Masele"],
+    "kai": "Masele",
+    "ind": "Sakit",
+    "kai_syns": ["Pariki"],
+    "ind_syns": ["Tidak sehat"],
+    "sents": ["Saya harus pergi ke rumah sakit"]
+  },
+  {
+    "pron": ["Salamu"],
+    "kai": "Salamu",
+    "ind": "Salam",
+    "kai_syns": ["-"],
+    "ind_syns": ["Sapa"],
+    "sents": ["Sebelum masuk ucapkan Salam"]
+  },
+  {
+    "pron": ["Esalai"],
+    "kai": "Esalai",
+    "ind": "Salah",
+    "kai_syns": ["taha manisa"],
+    "ind_syns": ["Tidak benar"],
+    "sents": ["Kamu menjawab pertanyaan itu salah"]
+  },
+  {
+    "pron": ["Ahaisaai"],
+    "kai": "Ahaisaai",
+    "ind": "Sama",
+    "kai_syns": ["-"],
+    "ind_syns": ["Sejenis"],
+    "sents": ["Semua Sama benarnya"]
+  },
+  {
+    "pron": ["Tetihuta"],
+    "kai": "Tetihuta",
+    "ind": "Sampah",
+    "kai_syns": ["rumput"],
+    "ind_syns": ["Limbah"],
+    "sents": ["Saya harus pergi membuang sampah"]
+  },
+  {
+    "pron": ["Kawai'eya"],
+    "kai": "Kawai'eya",
+    "ind": "Sampai",
+    "kai_syns": ["Sampe"],
+    "ind_syns": ["Tiba"],
+    "sents": ["Kakak saya sudah sampai di kailolo"]
+  },
+  {
+    "pron": ["wa'to"],
+    "kai": "wa'to",
+    "ind": "Sana",
+    "kai_syns": ["-"],
+    "ind_syns": ["Lokasi"],
+    "sents": ["Disana ada tempat yang indah"]
+  },
+  {
+    "pron": ["Karbou"],
+    "kai": "Karbou",
+    "ind": "Sapi",
+    "kai_syns": ["-"],
+    "ind_syns": ["Banteng"],
+    "sents": ["Saya melihat sapi"]
+  },
+  {
+    "pron": ["Tepa"],
+    "kai": "Tepa",
+    "ind": "Sarung",
+    "kai_syns": ["Kain"],
+    "ind_syns": ["Selendang"],
+    "sents": ["saya menyiapkan sarung untuk ayah saya berangkat ke masjid"]
+  },
+  {
+    "pron": ["Salai"],
+    "kai": "Salai",
+    "ind": "Sapu",
+    "kai_syns": ["Menyapu"],
+    "ind_syns": ["pelap"],
+    "sents": ["Tolong sapu halaman rumahku"]
+  },
+  {
+    "pron": ["Sane"],
+    "kai": "Sane",
+    "ind": "Satu",
+    "kai_syns": ["-"],
+    "ind_syns": ["Sekali"],
+    "sents": ["Saya membeli satu buah mangga"]
+  },
+  {
+    "pron": ["Utan"],
+    "kai": "Utane",
+    "ind": "Sayur",
+    "kai_syns": ["Sayor"],
+    "ind_syns": ["Bahan"],
+    "sents": ["Saya suka makan sayur sawi"]
+  },
+  {
+    "pron": ["Mai"],
+    "kai": "Mai",
+    "ind": "Sehat",
+    "kai_syns": ["Bae"],
+    "ind_syns": ["Segar"],
+    "sents": ["Teman saya sudah sehat"]
+  },
+  {
+    "pron": ["Isai"],
+    "kai": "Isai",
+    "ind": "Sekali",
+    "kai_syns": ["-"],
+    "ind_syns": ["Sekaligus"],
+    "sents": ["baru sekali saya pergi ke jakarta"]
+  },
+  {
+    "pron": ["Manahati"],
+    "kai": "Manahti",
+    "ind": "Sekarang",
+    "kai_syns": ["-"],
+    "ind_syns": ["saat ini"],
+    "sents": ["Sekarang waktunya untuk belajar dengan baik"]
+  },
+  {
+    "pron": ["Iskola"],
+    "kai": "Iskola",
+    "ind": "Sekolah",
+    "kai_syns": ["-"],
+    "ind_syns": ["Institut"],
+    "sents": ["Adik saya berskolah di ambon"]
+  },
+  {
+    "pron": ["Salasa"],
+    "kai": "Salasa",
+    "ind": "Selasa",
+    "kai_syns": ["-"],
+    "ind_syns": ["Selaasa"],
+    "sents": ["Kemarin hari selasa"]
+  },
+  {
+    "pron": ["Salamate"],
+    "kai": "Salamate",
+    "ind": "Selamat",
+    "kai_syns": ["-"],
+    "ind_syns": ["Aman"],
+    "sents": ["Selamat yah atas prestasi terbaik mu"]
+  },
+  {
+    "pron": ["Ingmau"],
+    "kai": "Ingmau",
+    "ind": "Selera",
+    "kai_syns": ["Kemauan"],
+    "ind_syns": ["Kesekaan"],
+    "sents": ["Selera saya suka makan ayam"]
+  },
+  {
+    "pron": ["Kain Panase"],
+    "kai": "Kain Panase",
+    "ind": "Selimut",
+    "kai_syns": ["-"],
+    "ind_syns": ["Sarung"],
+    "sents": ["Tidurlah dengan selimut"]
+  },
+  {
+    "pron": ["Louru"],
+    "kai": "Louru",
+    "ind": "Seluruh",
+    "kai_syns": ["semuah"],
+    "ind_syns": ["Keseluruhan"],
+    "sents": ["Seluruh halaman rumah itu harus bersih"]
+  },
+  {
+    "pron": ["Mai"],
+    "kai": "Mai",
+    "ind": "Sembuh",
+    "kai_syns": ["Bae"],
+    "ind_syns": ["Pulih"],
+    "sents": ["Ibu saya sudah sembuh"]
+  },
+  {
+    "pron": ["Pakahuni"],
+    "kai": "Pakahuni",
+    "ind": "Sembunyi",
+    "kai_syns": ["Pasambunyi"],
+    "ind_syns": ["Tertutup"],
+    "sents": ["kaka saya sembunyikan uang saya"]
+  },
+  {
+    "pron": ["Isanang"],
+    "kai": "Isanang",
+    "ind": "Senang",
+    "kai_syns": ["bahagia"],
+    "ind_syns": ["Bergembira"],
+    "sents": ["Samrah sangat senang melihat sanset"]
+  },
+  {
+    "pron": ["Isnene"],
+    "kai": "Isnin",
+    "ind": "Senin",
+    "kai_syns": ["-"],
+    "ind_syns": ["awal minggu"],
+    "sents": ["hari senin akan di adakan upacara "]
+  },
+  {
+    "pron": ["Bistol"],
+    "kai": "Bistole",
+    "ind": "Senjata",
+    "kai_syns": ["-"],
+    "ind_syns": ["Senapan"],
+    "sents": ["Polisi itu memegang senjata "]
+  },
+  {
+    "pron": ["Incocoke"],
+    "kai": "Incocoke",
+    "ind": "Serasi",
+    "kai_syns": ["Persis"],
+    "ind_syns": ["Selaras"],
+    "sents": ["Samrah dan chairil sangat serasi "]
+  },
+  {
+    "pron": ["Saptember"],
+    "kai": "Saptembere",
+    "ind": "September",
+    "kai_syns": ["-"],
+    "ind_syns": ["Bulan"],
+    "sents": ["Bulan september adalah akhir pembelejaran"]
+  },
+  {
+    "pron": ["Aisaai"],
+    "kai": "Aisaai",
+    "ind": "Serasi",
+    "kai_syns": ["Parsis"],
+    "ind_syns": ["Selaras"],
+    "sents": ["Samrah dan chairil sangat serasi"]
+  },
+  {
+    "pron": ["Utiny"],
+    "kai": "Utinyele",
+    "ind": "Seratus",
+    "kai_syns": ["Saratus"],
+    "ind_syns": ["Ratus"],
+    "sents": ["Saya mempunyai uang seratus"]
+  },
+  {
+    "pron": ["Manisa"],
+    "kai": "Manisa",
+    "ind": "Serius",
+    "kai_syns": ["Ole"],
+    "ind_syns": ["Jujur"],
+    "sents": ["Ifan belajar dengan serius"]
+  },
+  {
+    "pron": ["Looka"],
+    "kai": "Looka",
+    "ind": "Serta",
+    "kai_syns": ["semua"],
+    "ind_syns": ["Juga"],
+    "sents": ["saya membawa bju serta barang lainya"]
+  },
+  {
+    "pron": ["Looka"],
+    "kai": "Looka",
+    "ind": "Serta",
+    "kai_syns": ["semua"],
+    "ind_syns": ["Juga"],
+    "sents": ["saya membawa baju serta barang lainya"]
+  },
+  {
+    "pron": ["Manisa"],
+    "kai": "Manisa",
+    "ind": "Setujuh",
+    "kai_syns": ["Betul"],
+    "ind_syns": ["Iya"],
+    "sents": ["saya tidak setujuh dengan pendapatnya"]
+  },
+  {
+    "pron": ["Alawata"],
+    "kai": "Alawata",
+    "ind": "Siang",
+    "kai_syns": ["-"],
+    "ind_syns": ["Tengah hari"],
+    "sents": ["siang ini saya mau pergi ke kampus"]
+  },
+  {
+    "pron": ["Ole"],
+    "kai": "Ole",
+    "ind": "Siap",
+    "kai_syns": ["oke"],
+    "ind_syns": ["Selesai"],
+    "sents": ["Saya siap mengikuti ujian"]
+  },
+  {
+    "pron": ["Seiya"],
+    "kai": "Seiya",
+    "ind": "Siapa",
+    "kai_syns": ["Sapa"],
+    "ind_syns": ["Apa"],
+    "sents": ["Siapa yang membeli itu"]
+  },
+  {
+    "pron": ["Aleke"],
+    "kai": "Aleke",
+    "ind": "Silahkan",
+    "kai_syns": ["ose"],
+    "ind_syns": ["Mari"],
+    "sents": ["Silahkan keluar dari ruangan ini"]
+  },
+  {
+    "pron": ["Pakahela"],
+    "kai": "Pakahela",
+    "ind": "Simpan",
+    "kai_syns": ["simpang"],
+    "ind_syns": ["Menyimpan"],
+    "sents": ["Tolong simpan uang aku"]
+  },
+  {
+    "pron": ["balajare"],
+    "kai": "balajare",
+    "ind": "Simulasi",
+    "kai_syns": ["ajare"],
+    "ind_syns": ["Percobaan"],
+    "sents": [" satu minggu yang lalu saya simulasi belajar main komputer"]
+  },
+  {
+    "pron": ["Jaringane"],
+    "kai": "Jaringane",
+    "ind": "Sinyale",
+    "kai_syns": ["-"],
+    "ind_syns": ["Tanda"],
+    "sents": ["Sinyal di kampung ku kurang baik"]
+  },
+  {
+    "pron": ["Kitire"],
+    "kai": "Kitire",
+    "ind": "Siram",
+    "kai_syns": ["-"],
+    "ind_syns": ["Menyiram"],
+    "sents": ["Setiap pagi saya menyiram tanaman saya"]
+  },
+  {
+    "pron": ["Laria"],
+    "kai": "Laria",
+    "ind": "Sisir",
+    "kai_syns": ["-"],
+    "ind_syns": ["Sisiran"],
+    "sents": ["Habis mandi saya selalu sisir rambut"]
+  },
+  {
+    "pron": ["keadaane"],
+    "kai": "Keadaane",
+    "ind": "Situasi",
+    "kai_syns": ["-"],
+    "ind_syns": ["Kondisi"],
+    "sents": ["Situasi di stain sedang tidak baik-baik saja"]
+  },
+  {
+    "pron": ["mauei"],
+    "kai": "mauei",
+    "ind": "Sopan",
+    "kai_syns": ["adape"],
+    "ind_syns": ["adap"],
+    "sents": ["anak itu sangat sopan"]
+  },
+  {
+    "pron": ["Baleho"],
+    "kai": "Baleho",
+    "ind": "Spanduk",
+    "kai_syns": ["Poster"],
+    "ind_syns": ["Plakat"],
+    "sents": ["Setiap pemilu banyak sekali spanduk"]
+  },
+  {
+    "pron": ["Wairaloi"],
+    "kai": "Wairaloi",
+    "ind": "Subuh",
+    "kai_syns": ["pagi"],
+    "ind_syns": ["Fajar"],
+    "sents": ["Ayah saya selalu ke masjid untuk sholat subuh"]
+  },
+  {
+    "pron": ["Pelaai"],
+    "kai": "pelaai",
+    "ind": "sudah",
+    "kai_syns": ["-"],
+    "ind_syns": ["selesai"],
+    "sents": ["saya sudah selesai belajar"]
+  },
+  {
+    "pron": ["Pasuka"],
+    "kai": "pasuka",
+    "ind": "suka",
+    "kai_syns": ["-"],
+    "ind_syns": ["favorit"],
+    "sents": ["Kakak saya suka makan buah"]
+  },
+  {
+    "pron": ["he'e"],
+    "kai": "he'e",
+    "ind": "suku",
+    "kai_syns": ["asal"],
+    "ind_syns": ["Kaum"],
+    "sents": ["Teman saya dari suku ambon"]
+  },
+  {
+    "pron": ["Parigi"],
+    "kai": "Parigi",
+    "ind": "sumur",
+    "kai_syns": ["air bak"],
+    "ind_syns": ["sumuran"],
+    "sents": ["Di sebelah rumah saya ada sumur"]
+  },
+  {
+    "pron": ["wae'irai"],
+    "kai": "wae'irai",
+    "ind": "sungai",
+    "kai_syns": ["Pante"],
+    "ind_syns": ["Kali"],
+    "sents": ["Sungai itu sangat bersih"]
+  },
+  {
+    "pron": ["Maai"],
+    "kai": "Maai",
+    "ind": "Taat",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Anak-anak tersebut sangat taat pada peraturan sekolah"]
+  },
+  {
+    "pron": ["Notoi"],
+    "kai": "Notoi",
+    "ind": "Tabrak",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Mobilnya mengalami kecelakaan tabrak-membanting di jalan tol"]
+  },
+  {
+    "pron": ["Hesoriya"],
+    "kai": "Hesoriya",
+    "ind": "Tadi",
+    "kai_syns": ["Hesoriya to"],
+    "ind_syns": ["Baru Saja"],
+    "sents": ["Saya melihat kucing itu di halaman belakang tadi pagi"]
+  },
+  {
+    "pron": ["Tahune"],
+    "kai": "Tahune",
+    "ind": "Tahun",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Saya sudah bekerja di perusahaan ini selama lima tahun"]
+  },
+  {
+    "pron": ["Tahunens"],
+    "kai": "Tahunens",
+    "ind": "Tahunan",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": [
+      "Acara tahunan sekolah akan diadakan pada bulan Oktober tahun ini"
+    ]
+  },
+  {
+    "pron": ["Isapela"],
+    "kai": "Isapela",
+    "ind": "Tahap",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": [
+      "Tahap pertama dalam proses perekrutan adalah seleksi berkas lamaran"
+    ]
+  },
+  {
+    "pron": ["Meu"],
+    "kai": "Meu",
+    "ind": "Tajam",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Pisau itu sangat tajam sehingga dapat memotong dengan mudah"]
+  },
+  {
+    "pron": ["Kele"],
+    "kai": "Kele",
+    "ind": "Takut",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Anak-anak seringkali merasa takut pada kegelapan"]
+  },
+  {
+    "pron": ["Walete"],
+    "kai": "Walet",
+    "ind": "Tali",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Anak-anak itu mengikat tali di pohon untuk membuat ayunan"]
+  },
+  {
+    "pron": ["Tamane"],
+    "kai": "Tamane",
+    "ind": "Taman",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": [
+      "Anak-anak senang bermain di taman bermain yang ada di pusat kota"
+    ]
+  },
+  {
+    "pron": ["Tamate"],
+    "kai": "Tamate",
+    "ind": "Tamat",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Film itu akhirnya tamat setelah dua jam berjalan"]
+  },
+  {
+    "pron": ["Kupu"],
+    "kai": "Kupu",
+    "ind": "Tangkap",
+    "kai_syns": ["Kupu"],
+    "ind_syns": ["Dapat"],
+    "sents": ["Nelayan itu menggunakan jaring untuk menangkap ikan di sungai"]
+  },
+  {
+    "pron": ["Mansia wasi"],
+    "kai": "Mansia wasi",
+    "ind": "Tani",
+    "kai_syns": ["Mansia wasi"],
+    "ind_syns": ["Petani"],
+    "sents": [
+      "Bapak itu adalah seorang petani tani yang berpengalaman dalam mengelola lahan pertanian"
+    ]
+  },
+  {
+    "pron": ["Rima"],
+    "kai": "Rima",
+    "ind": "Tangan",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Saya mencuci tangan saya sebelum makan"]
+  },
+  {
+    "pron": ["Puri"],
+    "kai": "Puri",
+    "ind": "Tanya",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Isma sering tanya,kapan ujian"]
+  },
+  {
+    "pron": ["Lahane"],
+    "kai": "Lahane",
+    "ind": "Tapak",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Tapak kaki gajah itu sangat besar dan mendalam di tanah"]
+  },
+  {
+    "pron": ["Tarife"],
+    "kai": "Tarife",
+    "ind": "Tarif",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": [
+      "Perusahaan telekomunikasi menawarkan berbagai paket dengan tarif bulanan yang berbeda-beda"
+    ]
+  },
+  {
+    "pron": ["He'e"],
+    "kai": "He'e",
+    "ind": "Taruh",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Saya akan taruh buku ini di rak atas"]
+  },
+  {
+    "pron": ["Tas'e"],
+    "kai": "Tas'e",
+    "ind": "Tas",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Saya mengambil Tas dirak"]
+  },
+  {
+    "pron": ["Tawase"],
+    "kai": "Tawase",
+    "ind": "Tawas",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": [
+      "Toko obat tradisional menjual berbagai produk kesehatan, termasuk tawas"
+    ]
+  },
+  {
+    "pron": ["Maoa"],
+    "kai": "Maosa",
+    "ind": "Tawa",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Tawa anak-anak yang bermain di taman terdengar begitu riang"]
+  },
+  {
+    "pron": ["Kotole"],
+    "kai": "Kotole",
+    "ind": "Tebang",
+    "kai_syns": ["Hita"],
+    "ind_syns": ["Potong"],
+    "sents": ["Saya menebang pohon"]
+  },
+  {
+    "pron": ["Tobu"],
+    "kai": "Tobu",
+    "ind": "Tebu",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Tebu adalah bahan utama untuk membuat gula"]
+  },
+  {
+    "pron": ["Tegake"],
+    "kai": "Tegake",
+    "ind": "Tegak",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Tiang bendera itu berdiri tegak di tengah lapangan"]
+  },
+  {
+    "pron": ["Tegange"],
+    "kai": "Tegange",
+    "ind": "Tegang",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": [
+      "Pertandingan final yang ketat membuat para penonton merasa tegang"
+    ]
+  },
+  {
+    "pron": ["Tegase"],
+    "kai": "Tegase",
+    "ind": "Tegas",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": [
+      "Kepala sekolah mengambil tindakan tegas terhadap siswa yang melanggar aturan"
+    ]
+  },
+  {
+    "pron": ["Pela'ai"],
+    "kai": "Pela'ai",
+    "ind": "Telah",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Pertandingan sepak bola itu telah usai"]
+  },
+  {
+    "pron": ["Manewa"],
+    "kai": "Manewa",
+    "ind": "Telat",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": [
+      "Jangan biasakan tidur larut malam agar kamu tidak telat bangun pagi"
+    ]
+  },
+  {
+    "pron": ["Telepone"],
+    "kai": "Telepone",
+    "ind": "Telepon",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Saya akan telepon kamu setelah makan siang"]
+  },
+  {
+    "pron": ["Tarinya"],
+    "kai": "Tarinya",
+    "ind": "Telinga",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": [
+      "Suara gemuruh petir membuatnya merasa seperti telinganya akan pecah"
+    ]
+  },
+  {
+    "pron": ["Tanjonge"],
+    "kai": "Tanjangoe",
+    "ind": "Teluk",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Kapal Fery melewati teluk Alang"]
+  },
+  {
+    "pron": ["Tamange"],
+    "kai": "Tamange",
+    "ind": "Teman",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Dia adalah teman saya"]
+  },
+  {
+    "pron": ["Tempelw"],
+    "kai": "Tempelw",
+    "ind": "Tempel",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Dia sedang tempel buku"]
+  },
+  {
+    "pron": ["Manisa"],
+    "kai": "TManisa",
+    "ind": "Tepat",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": [
+      "Lokasi kantor baru ini sangat tepat karena dekat dengan fasilitas umum dan transportasi"
+    ]
+  },
+  {
+    "pron": ["Talaele"],
+    "kai": "Talaele",
+    "ind": "Tepi",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Disana adalah Tepi sungai"]
+  },
+  {
+    "pron": ["Kina"],
+    "kai": "Kinag",
+    "ind": "Terang",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Lampu itu sangat Terang"]
+  },
+  {
+    "pron": ["Palue"],
+    "kai": "Palue",
+    "ind": "Teringat",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Isma teringat kenangan masa sekolah"]
+  },
+  {
+    "pron": ["Ehe'e"],
+    "kai": "Ehe'e",
+    "ind": "Terlarang",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Jangan Pergi ke situ Karena tempat itu sangat terlarang"]
+  },
+  {
+    "pron": ["Ahato"],
+    "kai": "Ahato",
+    "ind": "Ternyata",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Ternyata tempat itu sangat indah"]
+  },
+  {
+    "pron": ["Ioue"],
+    "kai": "Ioue",
+    "ind": "Terus",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Mobil itu terus melaju dengan kecepatan tinggi di jalan tol"]
+  },
+  {
+    "pron": ["Toru"],
+    "kai": "Toru",
+    "ind": "Tiga",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Leptop itu berjumlah tiga buah"]
+  },
+  {
+    "pron": ["Ikawa"],
+    "kai": "Ikawa",
+    "ind": "Tiba",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Driver Maxim telah tiba"]
+  },
+  {
+    "pron": ["Lalolo"],
+    "kai": "Lalolo",
+    "ind": "Tinggi",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Rumah itu Tingii empat meter"]
+  },
+  {
+    "pron": ["Lalolo"],
+    "kai": "Lalolo",
+    "ind": "Tinggi",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Rumah itu Tingii empat meter"]
+  },
+  {
+    "pron": ["Eheoi'eya"],
+    "kai": "Eheoi'eya",
+    "ind": "Tinggal",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Isma tinggal diwara"]
+  },
+  {
+    "pron": ["Ahati"],
+    "kai": "Ahati",
+    "ind": "Tipe",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Draling itu tipe"]
+  },
+  {
+    "pron": ["Hordenge"],
+    "kai": "Hordenge",
+    "ind": "Tirai",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Setiap pagi Isma membuka Tirai jendela"]
+  },
+  {
+    "pron": ["Husaele"],
+    "kai": "Husale",
+    "ind": "Tiup",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Isma tiup lilin ultah"]
+  },
+  {
+    "pron": ["Ehe"],
+    "kai": "Ehe",
+    "ind": "Tolak",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["isma ditolak menjadi ibu bhanyakari"]
+  },
+  {
+    "pron": ["Ehe"],
+    "kai": "Ehe",
+    "ind": "Tolak",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["isma ditolak menjadi ibu bhanyakari"]
+  },
+  {
+    "pron": ["Bos Ira'ai"],
+    "kai": "Bos Ira'ai",
+    "ind": "Tuan",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Tuan bos adalah Chairil"]
+  },
+  {
+    "pron": ["Itu"],
+    "kai": "Itu",
+    "ind": "Tujuh",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["KIpas angin ada Tujuh buah"]
+  },
+  {
+    "pron": ["Akuhu"],
+    "kai": "Akuhu",
+    "ind": "Tumbuh",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Isma Tumbuh ke atas bukan ke samping"]
+  },
+  {
+    "pron": ["Tumoange"],
+    "kai": "Tumoange",
+    "ind": "Tumpang",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Ini adalah nasi tumpang"]
+  },
+  {
+    "pron": ["Ehe'ene"],
+    "kai": "Ehe'ene",
+    "ind": "Tunda",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Kegiatan tunda"]
+  },
+  {
+    "pron": ["Patotuele"],
+    "kai": "Patotuele",
+    "ind": "Tunjuk",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": [
+      "Dalam budaya tertentu, menunjuk seseorang dengan jari telunjuk dianggap kurang sopan"
+    ]
+  },
+  {
+    "pron": ["Kuru"],
+    "kai": "Kuru",
+    "ind": "Turun",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Hujan turun sangat deras"]
+  },
+  {
+    "pron": ["Kiha"],
+    "kai": "Kiha",
+    "ind": "Tusuk",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": [
+      "Dia merasakan sakit tajam saat tusukan jarum masuk ke dalam kulitnya"
+    ]
+  },
+  {
+    "pron": ["Pisi"],
+    "kai": "Pisi",
+    "ind": "Tusuk",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Mata Uang Indonesia adalah Rupiah"]
+  },
+  {
+    "pron": ["Keura Putiele"],
+    "kai": "Keura Putiele",
+    "ind": "uban",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Kakek itu sudah mempunyai uban"]
+  },
+  {
+    "pron": ["Huhuele"],
+    "kai": "Huhuele",
+    "ind": "Ujung",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Ujung adalah rumahnya Isma"]
+  },
+  {
+    "pron": ["Nia"],
+    "kai": "Nia",
+    "ind": "Ular",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Ular itu sangat berbisa"]
+  },
+  {
+    "pron": ["Wa"],
+    "kai": "Wa",
+    "ind": "Untuk",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Uang ini untuk Isma"]
+  },
+  {
+    "pron": ["Poso"],
+    "kai": "Poso",
+    "ind": "Usaha",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Usaha sembako terbesar di maluku adalah Perusahan 51"]
+  },
+  {
+    "pron": ["Eselesaieya"],
+    "kai": "Eselesaieya",
+    "ind": "Usai",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Dia langsung pulang ke rumah usai bekerja seharian di kantor"]
+  },
+  {
+    "pron": ["Nonaele"],
+    "kai": "Nonaele",
+    "ind": "Usap",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Usap layar untuk membuka pola"]
+  },
+  {
+    "pron": ["Ikana"],
+    "kai": "Ikana",
+    "ind": "Utang",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Utang isma ada 200 rupiah"]
+  },
+  {
+    "pron": ["Ucapiaele"],
+    "kai": "Ucapiaele",
+    "ind": "Utarakan",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Jika ada keluhan, utarakan saja kepada kak Chairil"]
+  },
+  {
+    "pron": ["Huale"],
+    "kai": "Huale",
+    "ind": "Utuh",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Rumah itu masih berdiri utuh meskipun terkena gempa"]
+  },
+  {
+    "pron": ["Hoania"],
+    "kai": "Hoania",
+    "ind": "Wacana",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": [
+      "Wacana politik menjelang pemilu tahun ini sangat menarik untuk diikuti"
+    ]
+  },
+  {
+    "pron": ["Ua"],
+    "kai": "Ua",
+    "ind": "Wajah",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": [
+      "Wajahnya terlihat sangat bahagia ketika dia menerima kabar baik itu"
+    ]
+  },
+  {
+    "pron": ["Harusei"],
+    "kai": "Harusei",
+    "ind": "Wajib",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Setiap siswa wajib mengikuti upacara bendera setiap hari Senin"]
+  },
+  {
+    "pron": ["Wasiete"],
+    "kai": "Wasiete",
+    "ind": "Wasit",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Wasit sepak bola adalah teman saya"]
+  }
+]
