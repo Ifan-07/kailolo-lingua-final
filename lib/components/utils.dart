@@ -20,7 +20,7 @@ Future<String> lastUpdatedLocalFile() async {
 
 Future<String> lastUpdatedOnlineFile() async {
   const owner = 'Ifan-07';
-  const repo = 'Kailolo-lingua';
+  const repo = 'kailolo-lingua-final';
   const filePath = 'assets/KamusKailolo.json';
 
   final response = await http.get(Uri.parse(

@@ -64,7 +64,7 @@ class _WordPageState extends State<WordPage> {
       } else {
         final response = await http.get(
           Uri.parse(
-              'https://raw.githubusercontent.com/Ifan-07/Kailolo-lingua/main/assets/KamusKailolo.json'),
+              'https://raw.githubusercontent.com/Ifan-07/kailolo-lingua-final/main/assets/KamusKailolo.json'),
         );
         if (response.statusCode == 200) {
           final jsonString = response.body;
