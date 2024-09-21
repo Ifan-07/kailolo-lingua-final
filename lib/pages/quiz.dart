@@ -98,6 +98,7 @@ class _QuizSettingsPageState extends State<QuizSettingsPage> {
                 if (username.isEmpty) {
                   ScaffoldMessenger.of(context).showSnackBar(
                     const SnackBar(
+                        backgroundColor: Colors.red,
                         content: Text('Masukkan nama Anda terlebih dahulu')),
                   );
                 } else if (numberOfQuestions > MAX_QUESTIONS) {
