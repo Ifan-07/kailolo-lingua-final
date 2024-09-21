@@ -80,7 +80,7 @@ class _QuizSettingsPageState extends State<QuizSettingsPage> {
               },
             ),
             const SizedBox(height: 20),
-            Text('Pilih waktu per soal: $timePerQuestion detik'),
+            Text('Pilih waktu pengerjaan per soal: $timePerQuestion detik'),
             Slider(
               value: timePerQuestion.toDouble(),
               min: 1,
@@ -99,7 +99,7 @@ class _QuizSettingsPageState extends State<QuizSettingsPage> {
                   ScaffoldMessenger.of(context).showSnackBar(
                     const SnackBar(
                         backgroundColor: Colors.red,
-                        content: Text('Masukkan nama Anda terlebih dahulu')),
+                        content: Text('Masukkan nama Anda terlebih dahulu 😊')),
                   );
                 } else if (numberOfQuestions > MAX_QUESTIONS) {
                   ScaffoldMessenger.of(context).showSnackBar(
