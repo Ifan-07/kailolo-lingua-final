@@ -4,6 +4,7 @@ import 'package:dictionary/main.dart';
 import 'package:dictionary/about_dev.dart';
 import 'package:dictionary/pages/catatan/catatan.dart';
 import 'package:dictionary/pages/sejarah_kailolo.dart';
+import 'dart:async';
 
 // ignore: constant_identifier_names
 const int MAX_QUESTIONS = 10;
@@ -53,7 +54,6 @@ class _QuizSettingsPageState extends State<QuizSettingsPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            // Input untuk nama pengguna
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20.0),
               child: TextField(
@@ -118,7 +118,7 @@ class _QuizSettingsPageState extends State<QuizSettingsPage> {
 
 class QuizPage extends StatefulWidget {
   final int numberOfQuestions;
-  final String username; // Tambahkan variabel untuk menyimpan nama pengguna
+  final String username;
   const QuizPage(
       {super.key, required this.numberOfQuestions, required this.username});
 
@@ -149,10 +149,20 @@ class _QuizPageState extends State<QuizPage> {
   int currentQuestionIndex = 0;
   List<Map<String, dynamic>> incorrectAnswers = [];
 
+  late Timer _timer;
+  static const int _questionDuration = 5;
+  int _timeLeft = _questionDuration;
+
   @override
   void initState() {
     super.initState();
     initializeQuiz();
+  }
+
+  @override
+  void dispose() {
+    _timer.cancel();
+    super.dispose();
   }
 
   void initializeQuiz() {
@@ -167,7 +177,26 @@ class _QuizPageState extends State<QuizPage> {
       currentQuestion = questions[currentQuestionIndex];
       correctAnswer = dictionary[currentQuestion]!;
       options = generateOptions();
+      startTimer();
     }
+  }
+
+  void startTimer() {
+    _timeLeft = _questionDuration;
+    _timer = Timer.periodic(const Duration(seconds: 1), (timer) {
+      setState(() {
+        if (_timeLeft > 0) {
+          _timeLeft--;
+        } else {
+          _timer.cancel();
+          timeUp();
+        }
+      });
+    });
+  }
+
+  void timeUp() {
+    checkAnswer(''); // Mengirim jawaban kosong untuk menandai jawaban salah
   }
 
   List<String> generateOptions() {
@@ -181,13 +210,15 @@ class _QuizPageState extends State<QuizPage> {
   }
 
   void checkAnswer(String selectedAnswer) {
+    _timer.cancel(); // Hentikan timer saat jawaban dipilih
+
     if (selectedAnswer == correctAnswer) {
       score++;
     } else {
       incorrectAnswers.add({
         'question': currentQuestion,
         'correctAnswer': correctAnswer,
-        'userAnswer': selectedAnswer,
+        'userAnswer': selectedAnswer.isEmpty ? 'Waktu Habis' : selectedAnswer,
       });
     }
 
@@ -210,7 +241,7 @@ class _QuizPageState extends State<QuizPage> {
           totalQuestions: questions.length,
           onRestart: restartQuiz,
           incorrectAnswers: incorrectAnswers,
-          username: widget.username, // Kirim nama pengguna ke halaman score
+          username: widget.username,
         ),
       ),
     );
@@ -244,32 +275,52 @@ class _QuizPageState extends State<QuizPage> {
         automaticallyImplyLeading: false,
       ),
       endDrawer: buildDrawer(context),
-      body: Center(
-        child: SingleChildScrollView(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              Text(
-                'Pertanyaan ${currentQuestionIndex + 1} dari ${questions.length}',
-                style: const TextStyle(fontSize: 18),
+      body: Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Text(
+              'Waktu pengerjaan: $_timeLeft detik',
+              style: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+                color: _timeLeft <= 1 ? Colors.red : Colors.black,
               ),
-              const SizedBox(height: 20),
-              Text(
-                'Terjemahkan: $currentQuestion',
-                style:
-                    const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-              ),
-              const SizedBox(height: 20),
-              ...options.map((option) => Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 8.0),
-                    child: ElevatedButton(
-                      onPressed: () => checkAnswer(option),
-                      child: Text(option),
-                    ),
-                  )),
-            ],
+            ),
           ),
-        ),
+          Expanded(
+            child: Center(
+              child: SingleChildScrollView(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Text(
+                      'Pertanyaan ${currentQuestionIndex + 1} dari ${questions.length}',
+                      style: const TextStyle(fontSize: 18),
+                    ),
+                    const SizedBox(height: 20),
+                    Text(
+                      'Terjemahkan: $currentQuestion',
+                      style: const TextStyle(
+                          fontSize: 24, fontWeight: FontWeight.bold),
+                    ),
+                    const SizedBox(height: 20),
+                    ...options.map((option) => Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 8.0),
+                          child: ElevatedButton(
+                            onPressed: () {
+                              _timer.cancel();
+                              checkAnswer(option);
+                            },
+                            child: Text(option),
+                          ),
+                        )),
+                  ],
+                ),
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }
@@ -380,7 +431,7 @@ class ScorePage extends StatelessWidget {
   final int totalQuestions;
   final VoidCallback onRestart;
   final List<Map<String, dynamic>> incorrectAnswers;
-  final String username; // Tambahkan variabel untuk menyimpan nama pengguna
+  final String username;
 
   const ScorePage({
     super.key,
@@ -388,7 +439,7 @@ class ScorePage extends StatelessWidget {
     required this.totalQuestions,
     required this.onRestart,
     required this.incorrectAnswers,
-    required this.username, // Terima nama pengguna
+    required this.username,
   });
 
   @override
