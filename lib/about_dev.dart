@@ -1,9 +1,11 @@
+import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:dictionary/components/utils.dart';
 import 'package:dictionary/main.dart';
 import 'package:dictionary/pages/catatan/catatan.dart';
 import 'package:dictionary/pages/quiz.dart';
 import 'package:flutter/material.dart';
 import 'package:dictionary/pages/sejarah_kailolo.dart';
+import 'package:flutter/services.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class AboutDevPage extends StatefulWidget {
@@ -81,7 +83,7 @@ class _AboutDevPageState extends State<AboutDevPage> {
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => const QuizPage()),
+                  MaterialPageRoute(builder: (context) => const QuizApp()),
                 );
               },
             ),
@@ -153,6 +155,15 @@ class _AboutDevPageState extends State<AboutDevPage> {
                 Navigator.pop(context); // Close the drawer
               },
             ),
+            ListTile(
+              leading: const Icon(
+                Icons.exit_to_app,
+              ),
+              title: const Text('Keluar'),
+              onTap: () {
+                _konfirmasiKeluar(context);
+              },
+            ),
           ],
         ),
       ),
@@ -160,7 +171,10 @@ class _AboutDevPageState extends State<AboutDevPage> {
         child: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment:
+                MainAxisAlignment.center, // Posisikan di tengah secara vertikal
+            crossAxisAlignment: CrossAxisAlignment
+                .center, // Posisikan di tengah secara horizontal
             children: [
               ClipRRect(
                 borderRadius: const BorderRadius.all(Radius.circular(10)),
@@ -178,7 +192,7 @@ class _AboutDevPageState extends State<AboutDevPage> {
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
                 ),
-                textAlign: TextAlign.center,
+                textAlign: TextAlign.center, // Teks di tengah
               ),
               const SizedBox(height: 10),
               const Text(
@@ -189,11 +203,20 @@ class _AboutDevPageState extends State<AboutDevPage> {
                 ),
               ),
               const SizedBox(height: 20),
-              const Text(
-                'Halo, perkenalkan kami adalah Irfan, Isma, dan Risma dari kampus ITB Stikom Ambon, harapan kami aplikasi ini dapat membantu masyarakat Negeri Kailolo dalam menerjemahkan kata-kata dalam Bahasa Indonesia ke Bahasa Daerah Kailolo, begitu juga sebaliknya 😊',
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontSize: 13,
+              SizedBox(
+                height: 150,
+                child: AnimatedTextKit(
+                  animatedTexts: [
+                    TyperAnimatedText(
+                      "Halo, perkenalkan kami adalah Irfan, Isma, dan Risma dari kampus ITB Stikom Ambon, harapan kami aplikasi ini dapat membantu masyarakat Negeri Kailolo dalam menerjemahkan kata-kata dalam Bahasa Indonesia ke Bahasa Daerah Kailolo, begitu juga sebaliknya 😊",
+                      speed: const Duration(milliseconds: 45),
+                      textStyle: const TextStyle(fontSize: 15),
+                      textAlign: TextAlign
+                          .justify, // Untuk membuat teks rata kiri-kanan
+                    )
+                  ],
+                  totalRepeatCount: 1,
+                  displayFullTextOnTap: true,
                 ),
               ),
             ],
@@ -202,4 +225,31 @@ class _AboutDevPageState extends State<AboutDevPage> {
       ),
     );
   }
+}
+
+void _konfirmasiKeluar(BuildContext context) {
+  showDialog(
+    context: context,
+    builder: (BuildContext context) {
+      return AlertDialog(
+        title: const Text("Konfirmasi"),
+        content: const Text("Apakah Anda yakin ingin keluar?"),
+        actions: <Widget>[
+          TextButton(
+            onPressed: () {
+              Navigator.of(context).pop();
+            },
+            child: const Text("Batal"),
+          ),
+          TextButton(
+            onPressed: () {
+              Navigator.of(context).pop();
+              SystemNavigator.pop();
+            },
+            child: const Text("Ya"),
+          ),
+        ],
+      );
+    },
+  );
 }

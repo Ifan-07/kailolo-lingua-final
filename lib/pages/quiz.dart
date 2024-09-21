@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:dictionary/components/utils.dart';
 import 'package:dictionary/main.dart';
@@ -18,17 +19,78 @@ class QuizApp extends StatelessWidget {
     return MaterialApp(
       title: 'Quiz',
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: const QuizPage(),
+      home: const QuizSettingsPage(),
       debugShowCheckedModeBanner: false,
     );
   }
 }
 
-class QuizPage extends StatefulWidget {
-  const QuizPage({super.key});
+class QuizSettingsPage extends StatefulWidget {
+  const QuizSettingsPage({super.key});
 
   @override
-  // ignore: library_private_types_in_public_api
+  _QuizSettingsPageState createState() => _QuizSettingsPageState();
+}
+
+class _QuizSettingsPageState extends State<QuizSettingsPage> {
+  int numberOfQuestions = 10;
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Quiz Settings'),
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.pushReplacement(
+              context,
+              MaterialPageRoute(builder: (context) => const WordPage()),
+            );
+          },
+        ),
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text('Select number of questions: $numberOfQuestions'),
+            Slider(
+              value: numberOfQuestions.toDouble(),
+              min: 5,
+              max: 50,
+              divisions: 25,
+              label: numberOfQuestions.toString(),
+              onChanged: (double value) {
+                setState(() {
+                  numberOfQuestions = value.round();
+                });
+              },
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) =>
+                        QuizPage(numberOfQuestions: numberOfQuestions),
+                  ),
+                );
+              },
+              child: const Text('Start Quiz'),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class QuizPage extends StatefulWidget {
+  final int numberOfQuestions;
+  const QuizPage({super.key, required this.numberOfQuestions});
+
+  @override
   _QuizPageState createState() => _QuizPageState();
 }
 
@@ -63,6 +125,7 @@ class _QuizPageState extends State<QuizPage> {
   void initializeQuiz() {
     questions = dictionary.keys.toList();
     questions.shuffle();
+    questions = questions.take(widget.numberOfQuestions).toList();
     setNextQuestion();
   }
 
@@ -292,10 +355,46 @@ class _QuizPageState extends State<QuizPage> {
               Navigator.pop(context);
             },
           ),
+          ListTile(
+            leading: const Icon(
+              Icons.exit_to_app,
+            ),
+            title: const Text('Keluar'),
+            onTap: () {
+              _konfirmasiKeluar(context);
+            },
+          ),
         ],
       ),
     );
   }
+}
+
+void _konfirmasiKeluar(BuildContext context) {
+  showDialog(
+    context: context,
+    builder: (BuildContext context) {
+      return AlertDialog(
+        title: const Text("Konfirmasi"),
+        content: const Text("Apakah Anda yakin ingin keluar?"),
+        actions: <Widget>[
+          TextButton(
+            onPressed: () {
+              Navigator.of(context).pop();
+            },
+            child: const Text("Batal"),
+          ),
+          TextButton(
+            onPressed: () {
+              Navigator.of(context).pop();
+              SystemNavigator.pop();
+            },
+            child: const Text("Ya"),
+          ),
+        ],
+      );
+    },
+  );
 }
 
 class ScorePage extends StatelessWidget {
@@ -366,10 +465,11 @@ class ScorePage extends StatelessWidget {
                 onPressed: () {
                   Navigator.pushReplacement(
                     context,
-                    MaterialPageRoute(builder: (context) => const QuizPage()),
+                    MaterialPageRoute(
+                        builder: (context) => const QuizSettingsPage()),
                   );
                 },
-                child: const Text('Uangi Quiz'),
+                child: const Text('Ulangi Quiz'),
               ),
               const SizedBox(height: 20),
             ],

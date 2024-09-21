@@ -6,6 +6,7 @@ import 'package:dictionary/pages/catatan/catatan.dart';
 import 'package:dictionary/pages/sejarah_kailolo.dart';
 import 'package:dictionary/pages/quiz.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:http/http.dart' as http;
 import 'package:path_provider/path_provider.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -292,7 +293,7 @@ class _WordPageState extends State<WordPage> {
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => const QuizPage()),
+                  MaterialPageRoute(builder: (context) => const QuizApp()),
                 );
               },
             ),
@@ -365,6 +366,15 @@ class _WordPageState extends State<WordPage> {
                 Navigator.pop(context); // Close the drawer
               },
             ),
+            ListTile(
+              leading: const Icon(
+                Icons.exit_to_app,
+              ),
+              title: const Text('Keluar'),
+              onTap: () {
+                _konfirmasiKeluar(context);
+              },
+            ),
           ],
         ),
       ),
@@ -379,4 +389,31 @@ class _WordPageState extends State<WordPage> {
             ),
     );
   }
+}
+
+void _konfirmasiKeluar(BuildContext context) {
+  showDialog(
+    context: context,
+    builder: (BuildContext context) {
+      return AlertDialog(
+        title: const Text("Konfirmasi"),
+        content: const Text("Apakah Anda yakin ingin keluar?"),
+        actions: <Widget>[
+          TextButton(
+            onPressed: () {
+              Navigator.of(context).pop();
+            },
+            child: const Text("Batal"),
+          ),
+          TextButton(
+            onPressed: () {
+              Navigator.of(context).pop();
+              SystemNavigator.pop();
+            },
+            child: const Text("Ya"),
+          ),
+        ],
+      );
+    },
+  );
 }
