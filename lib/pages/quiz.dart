@@ -1,23 +1,19 @@
+// ignore_for_file: constant_identifier_names
+
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
 import 'package:dictionary/main.dart';
-import 'package:dictionary/about_dev.dart';
-import 'package:dictionary/pages/catatan/catatan.dart';
-import 'package:dictionary/pages/sejarah_kailolo.dart';
 import 'dart:async';
 
-// ignore: constant_identifier_names
 const int MAX_QUESTIONS = 10;
+const int MAX_TIME_PER_QUESTION = 60;
 
 class QuizApp extends StatelessWidget {
   const QuizApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Quiz',
-      theme: ThemeData(primarySwatch: Colors.blue),
-      home: const QuizSettingsPage(),
+    return const MaterialApp(
+      home: QuizSettingsPage(),
       debugShowCheckedModeBanner: false,
     );
   }
@@ -32,8 +28,9 @@ class QuizSettingsPage extends StatefulWidget {
 }
 
 class _QuizSettingsPageState extends State<QuizSettingsPage> {
-  int numberOfQuestions = 1;
+  int numberOfQuestions = 5; // nilai default soal
   String username = '';
+  int timePerQuestion = 5; // nilai default waktu per soal
 
   @override
   Widget build(BuildContext context) {
@@ -82,6 +79,20 @@ class _QuizSettingsPageState extends State<QuizSettingsPage> {
                 });
               },
             ),
+            const SizedBox(height: 20),
+            Text('Pilih waktu per soal: $timePerQuestion detik'),
+            Slider(
+              value: timePerQuestion.toDouble(),
+              min: 1,
+              max: MAX_TIME_PER_QUESTION.toDouble(),
+              divisions: MAX_TIME_PER_QUESTION - 1,
+              label: timePerQuestion.toString(),
+              onChanged: (double value) {
+                setState(() {
+                  timePerQuestion = value.round();
+                });
+              },
+            ),
             ElevatedButton(
               onPressed: () {
                 if (username.isEmpty) {
@@ -102,6 +113,7 @@ class _QuizSettingsPageState extends State<QuizSettingsPage> {
                       builder: (context) => QuizPage(
                         numberOfQuestions: numberOfQuestions,
                         username: username,
+                        timePerQuestion: timePerQuestion,
                       ),
                     ),
                   );
@@ -119,8 +131,13 @@ class _QuizSettingsPageState extends State<QuizSettingsPage> {
 class QuizPage extends StatefulWidget {
   final int numberOfQuestions;
   final String username;
-  const QuizPage(
-      {super.key, required this.numberOfQuestions, required this.username});
+  final int timePerQuestion;
+  const QuizPage({
+    super.key,
+    required this.numberOfQuestions,
+    required this.username,
+    required this.timePerQuestion,
+  });
 
   @override
   // ignore: library_private_types_in_public_api
@@ -150,8 +167,7 @@ class _QuizPageState extends State<QuizPage> {
   List<Map<String, dynamic>> incorrectAnswers = [];
 
   late Timer _timer;
-  static const int _questionDuration = 5;
-  int _timeLeft = _questionDuration;
+  late int _timeLeft;
 
   @override
   void initState() {
@@ -182,7 +198,7 @@ class _QuizPageState extends State<QuizPage> {
   }
 
   void startTimer() {
-    _timeLeft = _questionDuration;
+    _timeLeft = widget.timePerQuestion;
     _timer = Timer.periodic(const Duration(seconds: 1), (timer) {
       setState(() {
         if (_timeLeft > 0) {
@@ -262,19 +278,8 @@ class _QuizPageState extends State<QuizPage> {
       appBar: AppBar(
         backgroundColor: Colors.blue,
         title: const Text('Quiz', style: TextStyle(color: Colors.white)),
-        actions: [
-          Builder(
-            builder: (context) => IconButton(
-              onPressed: () {
-                Scaffold.of(context).openEndDrawer();
-              },
-              icon: const Icon(Icons.menu, color: Colors.white),
-            ),
-          ),
-        ],
         automaticallyImplyLeading: false,
       ),
-      endDrawer: buildDrawer(context),
       body: Column(
         children: [
           Padding(
@@ -319,106 +324,6 @@ class _QuizPageState extends State<QuizPage> {
                 ),
               ),
             ),
-          ),
-        ],
-      ),
-    );
-  }
-
-  Widget buildDrawer(BuildContext context) {
-    return Drawer(
-      child: ListView(
-        padding: EdgeInsets.zero,
-        children: [
-          const DrawerHeader(
-            decoration: BoxDecoration(
-              color: Colors.blue,
-            ),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  'Kailolo Lingua',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 24,
-                  ),
-                ),
-                SizedBox(height: 8),
-                Text(
-                  'Aplikasi kamus terjemahan Indonesia - Kailolo',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 16,
-                  ),
-                ),
-              ],
-            ),
-          ),
-          ListTile(
-            leading: const Icon(Icons.home),
-            title: const Text('Home'),
-            onTap: () {
-              Navigator.pop(context);
-              Navigator.pushReplacement(
-                context,
-                MaterialPageRoute(builder: (context) => const WordPage()),
-              );
-            },
-          ),
-          ListTile(
-            leading: const Icon(Icons.question_answer),
-            title: const Text('Quiz'),
-            onTap: () {
-              Navigator.pop(context);
-            },
-          ),
-          ListTile(
-            leading: const Icon(Icons.notes),
-            title: const Text('Catatan'),
-            onTap: () {
-              Navigator.pop(context);
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const CatatanScreen()),
-              );
-            },
-          ),
-          ListTile(
-            leading: const Icon(Icons.add_circle_outline),
-            title: const Text('Request Kosakata'),
-            onTap: () async {
-              const url = 'https://forms.gle/sRAH399t2tsq6rjs9';
-              final uri = Uri.parse(url);
-              if (await canLaunchUrl(uri)) {
-                await launchUrl(uri);
-              } else {
-                throw 'Tidak bisa dijalankan $url';
-              }
-            },
-          ),
-          ListTile(
-            leading: const Icon(Icons.public),
-            title: const Text('Sejarah Negeri Kailolo'),
-            onTap: () {
-              Navigator.pop(context);
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                    builder: (context) => const AboutKailoloPage()),
-              );
-            },
-          ),
-          ListTile(
-            leading: const Icon(Icons.info),
-            title: const Text('Tentang Pengembang'),
-            onTap: () {
-              Navigator.pop(context);
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const AboutDevPage()),
-              );
-            },
           ),
         ],
       ),
