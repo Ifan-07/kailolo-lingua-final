@@ -111,7 +111,7 @@ class _WordPageState extends State<WordPage> {
                 searchController.clear();
                 searchWords('');
               },
-              icon: const Icon(Icons.clear),
+              icon: const Icon(Icons.delete),
             ),
             labelText: 'Cari kata',
             border: const OutlineInputBorder(),

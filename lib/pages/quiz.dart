@@ -1,15 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:dictionary/components/utils.dart';
 import 'package:dictionary/main.dart';
 import 'package:dictionary/about_dev.dart';
 import 'package:dictionary/pages/catatan/catatan.dart';
 import 'package:dictionary/pages/sejarah_kailolo.dart';
 
-void main() {
-  runApp(const QuizApp());
-}
+// ignore: constant_identifier_names
+const int MAX_QUESTIONS = 10;
 
 class QuizApp extends StatelessWidget {
   const QuizApp({super.key});
@@ -29,11 +26,13 @@ class QuizSettingsPage extends StatefulWidget {
   const QuizSettingsPage({super.key});
 
   @override
+  // ignore: library_private_types_in_public_api
   _QuizSettingsPageState createState() => _QuizSettingsPageState();
 }
 
 class _QuizSettingsPageState extends State<QuizSettingsPage> {
-  int numberOfQuestions = 10;
+  int numberOfQuestions = 1;
+  String username = '';
 
   @override
   Widget build(BuildContext context) {
@@ -54,12 +53,28 @@ class _QuizSettingsPageState extends State<QuizSettingsPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text('Select number of questions: $numberOfQuestions'),
+            // Input untuk nama pengguna
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20.0),
+              child: TextField(
+                decoration: const InputDecoration(
+                  labelText: 'Masukkan Nama Anda',
+                  border: OutlineInputBorder(),
+                ),
+                onChanged: (value) {
+                  setState(() {
+                    username = value;
+                  });
+                },
+              ),
+            ),
+            const SizedBox(height: 20),
+            Text('Pilih jumlah soal: $numberOfQuestions'),
             Slider(
               value: numberOfQuestions.toDouble(),
-              min: 5,
-              max: 50,
-              divisions: 25,
+              min: 1,
+              max: MAX_QUESTIONS.toDouble(),
+              divisions: MAX_QUESTIONS - 1,
               label: numberOfQuestions.toString(),
               onChanged: (double value) {
                 setState(() {
@@ -69,13 +84,28 @@ class _QuizSettingsPageState extends State<QuizSettingsPage> {
             ),
             ElevatedButton(
               onPressed: () {
-                Navigator.pushReplacement(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) =>
-                        QuizPage(numberOfQuestions: numberOfQuestions),
-                  ),
-                );
+                if (username.isEmpty) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(
+                        content: Text('Masukkan nama Anda terlebih dahulu')),
+                  );
+                } else if (numberOfQuestions > MAX_QUESTIONS) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(
+                        content:
+                            Text('Jumlah soal maksimal adalah $MAX_QUESTIONS')),
+                  );
+                } else {
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => QuizPage(
+                        numberOfQuestions: numberOfQuestions,
+                        username: username,
+                      ),
+                    ),
+                  );
+                }
               },
               child: const Text('Start Quiz'),
             ),
@@ -88,9 +118,12 @@ class _QuizSettingsPageState extends State<QuizSettingsPage> {
 
 class QuizPage extends StatefulWidget {
   final int numberOfQuestions;
-  const QuizPage({super.key, required this.numberOfQuestions});
+  final String username; // Tambahkan variabel untuk menyimpan nama pengguna
+  const QuizPage(
+      {super.key, required this.numberOfQuestions, required this.username});
 
   @override
+  // ignore: library_private_types_in_public_api
   _QuizPageState createState() => _QuizPageState();
 }
 
@@ -177,6 +210,7 @@ class _QuizPageState extends State<QuizPage> {
           totalQuestions: questions.length,
           onRestart: restartQuiz,
           incorrectAnswers: incorrectAnswers,
+          username: widget.username, // Kirim nama pengguna ke halaman score
         ),
       ),
     );
@@ -317,7 +351,7 @@ class _QuizPageState extends State<QuizPage> {
             title: const Text('Sejarah Negeri Kailolo'),
             onTap: () {
               Navigator.pop(context);
-              Navigator.pushReplacement(
+              Navigator.push(
                 context,
                 MaterialPageRoute(
                     builder: (context) => const AboutKailoloPage()),
@@ -325,43 +359,14 @@ class _QuizPageState extends State<QuizPage> {
             },
           ),
           ListTile(
-            leading: const Icon(Icons.person),
-            title: const Text('Tentang Developer'),
+            leading: const Icon(Icons.info),
+            title: const Text('Tentang Pengembang'),
             onTap: () {
               Navigator.pop(context);
-              Navigator.pushReplacement(
+              Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => const AboutDevPage()),
               );
-            },
-          ),
-          ListTile(
-            leading: const Icon(Icons.update),
-            title: FutureBuilder<String>(
-              future: lastUpdatedLocalFile(),
-              builder: (context, snapshot) {
-                if (snapshot.connectionState == ConnectionState.waiting) {
-                  return const CircularProgressIndicator(
-                    semanticsLabel: 'Loading..',
-                  );
-                } else if (snapshot.hasError) {
-                  return Text('Error: ${snapshot.error}');
-                } else {
-                  return Text('Waktu Update: ${snapshot.data}');
-                }
-              },
-            ),
-            onTap: () {
-              Navigator.pop(context);
-            },
-          ),
-          ListTile(
-            leading: const Icon(
-              Icons.exit_to_app,
-            ),
-            title: const Text('Keluar'),
-            onTap: () {
-              _konfirmasiKeluar(context);
             },
           ),
         ],
@@ -370,38 +375,12 @@ class _QuizPageState extends State<QuizPage> {
   }
 }
 
-void _konfirmasiKeluar(BuildContext context) {
-  showDialog(
-    context: context,
-    builder: (BuildContext context) {
-      return AlertDialog(
-        title: const Text("Konfirmasi"),
-        content: const Text("Apakah Anda yakin ingin keluar?"),
-        actions: <Widget>[
-          TextButton(
-            onPressed: () {
-              Navigator.of(context).pop();
-            },
-            child: const Text("Batal"),
-          ),
-          TextButton(
-            onPressed: () {
-              Navigator.of(context).pop();
-              SystemNavigator.pop();
-            },
-            child: const Text("Ya"),
-          ),
-        ],
-      );
-    },
-  );
-}
-
 class ScorePage extends StatelessWidget {
   final int score;
   final int totalQuestions;
   final VoidCallback onRestart;
   final List<Map<String, dynamic>> incorrectAnswers;
+  final String username; // Tambahkan variabel untuk menyimpan nama pengguna
 
   const ScorePage({
     super.key,
@@ -409,6 +388,7 @@ class ScorePage extends StatelessWidget {
     required this.totalQuestions,
     required this.onRestart,
     required this.incorrectAnswers,
+    required this.username, // Terima nama pengguna
   });
 
   @override
@@ -424,7 +404,7 @@ class ScorePage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                'Skor Anda: $score / $totalQuestions',
+                '$username, Skor Anda : $score / $totalQuestions',
                 style:
                     const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
               ),
