@@ -381,6 +381,287 @@
     "ind_syns": ["Cipta"],
     "sents": ["Tolong buatkan aku teh hangat."]
   },
+  {
+    "pron": ["Tapanono"],
+    "kai": "Tapanono",
+    "ind": "Bisu",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Dia bisu jadi tidak dapat berbicara"]
+  },
+  {
+    "pron": ["Bius"],
+    "kai": "Bius",
+    "ind": "Bius",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Dia sedang di bius oleh dokter"]
+  },
+  {
+    "pron": ["Na"],
+    "kai": "Na",
+    "ind": "Bobok",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["adik saya sedang bobok"]
+  },
+  {
+    "pron": ["Bohong"],
+    "kai": "Bohong",
+    "ind": "Bohong",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Dia telah berbohong padaku"]
+  },
+  {
+    "pron": ["Bola"],
+    "kai": "Bola",
+    "ind": "Bola",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Aku ingin bermain bola"]
+  },
+  {
+    "pron": ["Holat"],
+    "kai": "Holat",
+    "ind": "Bom",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Dia sedang membuat bom"]
+  },
+  {
+    "pron": ["Boneka"],
+    "kai": "Boneka",
+    "ind": "Boneka",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Aku ingin membeli boneka itu"]
+  },
+  {
+    "pron": ["Bonus"],
+    "kai": "Bonus",
+    "ind": "Bonus",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Aku akan memberimu bonus yang besar"]
+  },
+  {
+    "pron": ["Buah"],
+    "kai": "Buah",
+    "ind": "Buah",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Aku ingin makan buah apel"]
+  },
+  {
+    "pron": ["Bsi"],
+    "kai": "Esi",
+    "ind": "Buang",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Tolong buang sampah pada tempatnya"]
+  },
+  {
+    "pron": ["Huae"],
+    "kai": "Huae",
+    "ind": "Buaya",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Awas ada buaya"]
+  },
+  {
+    "pron": ["Bubur"],
+    "kai": "Bubur",
+    "ind": "Bubur",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Aku suka bubur"]
+  },
+  {
+    "pron": ["Adate"],
+    "kai": "Adate",
+    "ind": "Budaya",
+    "kai_syns": ["-"],
+    "ind_syns": ["Adat"],
+    "sents": ["ini sudah menjadi budaya kami"]
+  },
+  {
+    "pron": ["Haka"],
+    "kai": "Haka",
+    "ind": "Buka",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["tolong buka pintu"]
+  },
+  {
+    "pron": ["Taha"],
+    "kai": "Taha",
+    "ind": "Bukan",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Ini bukan salah saya"]
+  },
+  {
+    "pron": ["Wasi"],
+    "kai": "Wasi",
+    "ind": "Bukit",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Kita akan mendaki bukit itu"]
+  },
+  {
+    "pron": ["huran"],
+    "kai": "hurane",
+    "ind": "Bulan",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Malam ini bulan sangat terang"]
+  },
+  {
+    "pron": ["Bumi"],
+    "kai": "Bumi",
+    "ind": "Bumi",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Bumi itu bulat"]
+  },
+  {
+    "pron": ["Mate"],
+    "kai": "Mate",
+    "ind": "Bunuh",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Kucing itu mati terbunuh "]
+  },
+  {
+    "pron": ["Takou'esa"],
+    "kai": "Takouesa",
+    "ind": "Buta",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Ayam itu matanya buta "]
+  },
+  {
+    "pron": ["Butuh"],
+    "kai": "Butuh",
+    "ind": "Butuh",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Aku butuh bantuan kamu "]
+  },
+
+  {
+    "pron": ["Cabange"],
+    "kai": "Cabange",
+    "ind": "cabang",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Bank Bni Cabang ambon "]
+  },
+  {
+    "pron": ["Malari"],
+    "kai": "Malari",
+    "ind": "Cepat",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Tolong berjalan lebih cepat"]
+  },
+  {
+    "pron": ["Cakar"],
+    "kai": "Cakar",
+    "ind": "Cakar",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Kucing itu memiliki cakar yang sangat tajam"]
+  },
+  {
+    "pron": ["Calon"],
+    "kai": "Calon",
+    "ind": "Calon",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Dia adalah calon karyawan di perusahaan ini"]
+  },
+  {
+    "pron": ["Campur"],
+    "kai": "Campur",
+    "ind": "Campur",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Campurkan semua bahan-bahan itu"]
+  },
+  {
+    "pron": ["canggih"],
+    "kai": "Canggih",
+    "ind": "Canggih",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["AI merupkan teknologi yang sangat canggih saat ini"]
+  },
+  {
+    "pron": ["Ketele"],
+    "kai": "Ketele",
+    "ind": "Cangkir",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Berikan aku secangkir kopi"]
+  },
+  {
+    "pron": ["Koa"],
+    "kai": "Koa",
+    "ind": "Capek",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Saya sangat Capek"]
+  },
+  {
+    "pron": ["Cara"],
+    "kai": "Cara",
+    "ind": "Cara",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Bos akan menilai dari cara kamu memperlakukan orang lain"]
+  },
+  {
+    "pron": ["Cerdas"],
+    "kai": "Cerdas",
+    "ind": "Cerdas",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Kamu sangat cerdas"]
+  },
+  {
+    "pron": ["Katah"],
+    "kai": "Katah",
+    "ind": "Celana",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Celana yang kamu pakai ukurannya sangat besar"]
+  },
+  {
+    "pron": ["Sapau'u"],
+    "kai": "Sapau'u",
+    "ind": "Cincin",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Aku akan membelikan ibuku cincin"]
+  },
+  {
+    "pron": ["Cintah"],
+    "kai": "cintah",
+    "ind": "Cinta",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Aku cinta kamu"]
+  },
+  {
+    "pron": ["Panusu"],
+    "kai": "Panusu",
+    "ind": "Cium",
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
+    "sents": ["Aku mencium bau busuk"]
+  },
 
   {
     "pron": ["Ninu"],
