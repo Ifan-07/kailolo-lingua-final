@@ -86,7 +86,7 @@
     "sents": ["Api membara di dalam tungku perapian."]
   },
   {
-    "pron": ["Ate'0"],
+    "pron": ["Ate'o"],
     "kai": "Ate",
     "ind": "Atap",
     "kai_syns": ["-"],
@@ -208,7 +208,7 @@
   {
     "pron": ["Kunure"],
     "kai": "Kunu",
-    "ind": "bakar",
+    "ind": "Bakar",
     "kai_syns": ["-"],
     "ind_syns": ["-"],
     "sents": ["Rumahku Terbakar."]
@@ -454,7 +454,7 @@
     "sents": ["Aku ingin makan buah apel"]
   },
   {
-    "pron": ["Bsi"],
+    "pron": ["Esi"],
     "kai": "Esi",
     "ind": "Buang",
     "kai_syns": ["-"],
@@ -553,7 +553,7 @@
   {
     "pron": ["Cabange"],
     "kai": "Cabange",
-    "ind": "cabang",
+    "ind": "Cabang",
     "kai_syns": ["-"],
     "ind_syns": ["-"],
     "sents": ["Bank Bni Cabang ambon "]
@@ -817,15 +817,7 @@
     "pron": ["Riye"],
     "kai": "Riye",
     "ind": "Mencari",
-    "kai_syns": ["RIyeke"],
-    "ind_syns": ["Menyari"],
-    "sents": ["Turis itu sedang mencari petunjuk arah di peta kota"]
-  },
-  {
-    "pron": ["Riye"],
-    "kai": "Riye",
-    "ind": "Mencari",
-    "kai_syns": ["RIyeke"],
+    "kai_syns": ["Riyeke"],
     "ind_syns": ["Menyari"],
     "sents": ["Turis itu sedang mencari petunjuk arah di peta kota"]
   },
@@ -1052,18 +1044,10 @@
   {
     "pron": ["Langganane"],
     "kai": "Langganane",
-    "ind": "Pelanggang",
+    "ind": "Pelanggan",
     "kai_syns": ["Pembeli"],
     "ind_syns": ["Klien"],
-    "sents": ["Pelanggang saya sangat banyak"]
-  },
-  {
-    "pron": ["Malawa"],
-    "kai": "Malawa",
-    "ind": "Pelari",
-    "kai_syns": ["-"],
-    "ind_syns": ["Lari-Lari"],
-    "sents": ["Saudara saya seorang pelari"]
+    "sents": ["Pelanggan saya sangat banyak"]
   },
   {
     "pron": ["Malawa"],
@@ -1114,11 +1098,11 @@
     "kai": "Sel",
     "ind": "Penjara",
     "kai_syns": ["-"],
-    "ind_syns": ["Tertutup"],
+    "ind_syns": ["-"],
     "sents": ["Setelah terbukti bersalah, ia langsung dijebloskan ke penjara"]
   },
   {
-    "pron": ["Imai"],
+    "pron": ["Imai,eya"],
     "kai": "Imai,eya",
     "ind": "Penyembuhan",
     "kai_syns": ["barobat"],
@@ -1170,7 +1154,7 @@
   {
     "pron": ["Kawena"],
     "kai": "Kawena",
-    "ind": "Perkawinana",
+    "ind": "Perkawinan",
     "kai_syns": ["Nikah"],
     "ind_syns": ["Akad Nikah"],
     "sents": ["Perkawinan itu sangat mewah"]
@@ -1276,7 +1260,7 @@
     "kai": "Hp",
     "ind": "Ponsel",
     "kai_syns": ["-"],
-    "ind_syns": ["Handphon"],
+    "ind_syns": ["-"],
     "sents": ["Hp ku ini merek terbaru"]
   },
   {
@@ -1357,8 +1341,8 @@
     "pron": ["Kahua"],
     "kai": "Kahua",
     "ind": "Ramai",
-    "kai_syns": ["Rame"],
-    "ind_syns": ["Warga"],
+    "kai_syns": ["-"],
+    "ind_syns": ["-"],
     "sents": ["Saya tidak suka tempat yang ramai"]
   },
   {
@@ -1366,7 +1350,7 @@
     "kai": "Keura",
     "ind": "Rambut",
     "kai_syns": ["-"],
-    "ind_syns": ["Helai"],
+    "ind_syns": ["-"],
     "sents": ["Rambut teman saya sangat bagus"]
   },
   {
@@ -1374,7 +1358,7 @@
     "kai": "Usael",
     "ind": "Ratus",
     "kai_syns": ["-"],
-    "ind_syns": ["Seratus"],
+    "ind_syns": ["-"],
     "sents": ["Apkah saya bisa meminjam uang kamu seratus"]
   },
   {
@@ -1448,7 +1432,7 @@
     "kai": "Haipunale",
     "ind": "Rusak",
     "kai_syns": ["-"],
-    "ind_syns": ["Tidak layak"],
+    "ind_syns": ["-"],
     "sents": ["hendpone saya rusak"]
   },
   {
@@ -1472,7 +1456,7 @@
     "kai": "Salamu",
     "ind": "Salam",
     "kai_syns": ["-"],
-    "ind_syns": ["Sapa"],
+    "ind_syns": ["-"],
     "sents": ["Sebelum masuk ucapkan Salam"]
   },
   {
@@ -1512,7 +1496,7 @@
     "kai": "wa'to",
     "ind": "Sana",
     "kai_syns": ["-"],
-    "ind_syns": ["Lokasi"],
+    "ind_syns": ["-"],
     "sents": ["Disana ada tempat yang indah"]
   },
   {
@@ -1520,7 +1504,7 @@
     "kai": "Karbou",
     "ind": "Sapi",
     "kai_syns": ["-"],
-    "ind_syns": ["Banteng"],
+    "ind_syns": ["-"],
     "sents": ["Saya melihat sapi"]
   },
   {
@@ -1544,7 +1528,7 @@
     "kai": "Sane",
     "ind": "Satu",
     "kai_syns": ["-"],
-    "ind_syns": ["Sekali"],
+    "ind_syns": ["-"],
     "sents": ["Saya membeli satu buah mangga"]
   },
   {
@@ -1568,7 +1552,7 @@
     "kai": "Isai",
     "ind": "Sekali",
     "kai_syns": ["-"],
-    "ind_syns": ["Sekaligus"],
+    "ind_syns": ["-"],
     "sents": ["baru sekali saya pergi ke jakarta"]
   },
   {
@@ -1600,7 +1584,7 @@
     "kai": "Salamate",
     "ind": "Selamat",
     "kai_syns": ["-"],
-    "ind_syns": ["Aman"],
+    "ind_syns": ["-"],
     "sents": ["Selamat yah atas prestasi terbaik mu"]
   },
   {
@@ -1684,14 +1668,6 @@
     "sents": ["Bulan september adalah akhir pembelejaran"]
   },
   {
-    "pron": ["Aisaai"],
-    "kai": "Aisaai",
-    "ind": "Serasi",
-    "kai_syns": ["Parsis"],
-    "ind_syns": ["Selaras"],
-    "sents": ["Samrah dan chairil sangat serasi"]
-  },
-  {
     "pron": ["Utiny"],
     "kai": "Utinyele",
     "ind": "Seratus",
@@ -1716,17 +1692,9 @@
     "sents": ["saya membawa bju serta barang lainya"]
   },
   {
-    "pron": ["Looka"],
-    "kai": "Looka",
-    "ind": "Serta",
-    "kai_syns": ["semua"],
-    "ind_syns": ["Juga"],
-    "sents": ["saya membawa baju serta barang lainya"]
-  },
-  {
     "pron": ["Manisa"],
     "kai": "Manisa",
-    "ind": "Setujuh",
+    "ind": "Setuju",
     "kai_syns": ["Betul"],
     "ind_syns": ["Iya"],
     "sents": ["saya tidak setujuh dengan pendapatnya"]
@@ -1782,9 +1750,9 @@
   {
     "pron": ["Jaringane"],
     "kai": "Jaringane",
-    "ind": "Sinyale",
+    "ind": "Sinyal",
     "kai_syns": ["-"],
-    "ind_syns": ["Tanda"],
+    "ind_syns": ["-"],
     "sents": ["Sinyal di kampung ku kurang baik"]
   },
   {
@@ -1846,7 +1814,7 @@
   {
     "pron": ["Pasuka"],
     "kai": "pasuka",
-    "ind": "suka",
+    "ind": "Suka",
     "kai_syns": ["-"],
     "ind_syns": ["favorit"],
     "sents": ["Kakak saya suka makan buah"]
@@ -1854,7 +1822,7 @@
   {
     "pron": ["he'e"],
     "kai": "he'e",
-    "ind": "suku",
+    "ind": "Suku",
     "kai_syns": ["asal"],
     "ind_syns": ["Kaum"],
     "sents": ["Teman saya dari suku ambon"]
@@ -1862,7 +1830,7 @@
   {
     "pron": ["Parigi"],
     "kai": "Parigi",
-    "ind": "sumur",
+    "ind": "Sumur",
     "kai_syns": ["air bak"],
     "ind_syns": ["sumuran"],
     "sents": ["Di sebelah rumah saya ada sumur"]
@@ -1870,7 +1838,7 @@
   {
     "pron": ["wae'irai"],
     "kai": "wae'irai",
-    "ind": "sungai",
+    "ind": "Sungai",
     "kai_syns": ["Pante"],
     "ind_syns": ["Kali"],
     "sents": ["Sungai itu sangat bersih"]
@@ -2152,8 +2120,8 @@
     "sents": ["Dia adalah teman saya"]
   },
   {
-    "pron": ["Tempelw"],
-    "kai": "Tempelw",
+    "pron": ["Tempele"],
+    "kai": "Tempele",
     "ind": "Tempel",
     "kai_syns": ["-"],
     "ind_syns": ["-"],
@@ -2161,7 +2129,7 @@
   },
   {
     "pron": ["Manisa"],
-    "kai": "TManisa",
+    "kai": "Manisa",
     "ind": "Tepat",
     "kai_syns": ["-"],
     "ind_syns": ["-"],
@@ -2242,20 +2210,12 @@
     "sents": ["Rumah itu Tingii empat meter"]
   },
   {
-    "pron": ["Lalolo"],
-    "kai": "Lalolo",
-    "ind": "Tinggi",
-    "kai_syns": ["-"],
-    "ind_syns": ["-"],
-    "sents": ["Rumah itu Tingii empat meter"]
-  },
-  {
     "pron": ["Eheoi'eya"],
     "kai": "Eheoi'eya",
     "ind": "Tinggal",
     "kai_syns": ["-"],
     "ind_syns": ["-"],
-    "sents": ["Isma tinggal diwara"]
+    "sents": ["Isma tinggal di Wara"]
   },
   {
     "pron": ["Ahati"],
@@ -2280,14 +2240,6 @@
     "kai_syns": ["-"],
     "ind_syns": ["-"],
     "sents": ["Isma tiup lilin ultah"]
-  },
-  {
-    "pron": ["Ehe"],
-    "kai": "Ehe",
-    "ind": "Tolak",
-    "kai_syns": ["-"],
-    "ind_syns": ["-"],
-    "sents": ["isma ditolak menjadi ibu bhanyakari"]
   },
   {
     "pron": ["Ehe"],
@@ -2368,7 +2320,7 @@
   {
     "pron": ["Pisi"],
     "kai": "Pisi",
-    "ind": "Tusuk",
+    "ind": "Uang",
     "kai_syns": ["-"],
     "ind_syns": ["-"],
     "sents": ["Mata Uang Indonesia adalah Rupiah"]
@@ -2376,7 +2328,7 @@
   {
     "pron": ["Keura Putiele"],
     "kai": "Keura Putiele",
-    "ind": "uban",
+    "ind": "Uban",
     "kai_syns": ["-"],
     "ind_syns": ["-"],
     "sents": ["Kakek itu sudah mempunyai uban"]
