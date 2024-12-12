@@ -1,17 +1,9 @@
 ﻿[
   {
-    "pron": ["hola"],
-    "kai": "hola",
-    "ind": "halo",
-    "kai_syns": ["-"],
-    "ind_syns": ["-"],
-    "sents": ["halo selamat datang"]
-  },
-  {
     "pron": ["Rahane"],
     "kai": "Rahan",
     "ind": "Abang",
-    "kai_syns": ["Kaka"],
+    "kai_syns": ["Kaka"], 
     "ind_syns": ["Kakak"],
     "sents": ["Ketika kecil, abang saya sering membantu ibu di dapur."]
   },
