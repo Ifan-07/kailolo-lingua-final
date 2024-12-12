@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:dictionary/main.dart';
 import 'dart:async';
 
-const int MAX_QUESTIONS = 296;
+const int MAX_QUESTIONS = 297;
 const int MAX_TIME_PER_QUESTION = 60;
 
 class QuizApp extends StatelessWidget {
@@ -452,7 +452,7 @@ class _QuizPageState extends State<QuizPage> {
   late List<String> options;
   int score = 0;
   int currentQuestionIndex = 0;
-  List<Map<String, dynamic>> incorrectAnswers = [];
+  List<Map<String, dynamic>> allAnswers = [];
 
   late Timer _timer;
   late int _timeLeft;
@@ -514,17 +514,19 @@ class _QuizPageState extends State<QuizPage> {
   }
 
   void checkAnswer(String selectedAnswer) {
-    _timer.cancel(); // Hentikan timer saat jawaban dipilih
+    _timer.cancel();
 
-    if (selectedAnswer == correctAnswer) {
+    bool isCorrect = selectedAnswer == correctAnswer;
+    if (isCorrect) {
       score++;
-    } else {
-      incorrectAnswers.add({
-        'question': currentQuestion,
-        'correctAnswer': correctAnswer,
-        'userAnswer': selectedAnswer.isEmpty ? 'Waktu Habis' : selectedAnswer,
-      });
     }
+
+    allAnswers.add({
+      'question': currentQuestion,
+      'correctAnswer': correctAnswer,
+      'userAnswer': selectedAnswer.isEmpty ? 'Waktu Habis' : selectedAnswer,
+      'isCorrect': isCorrect,
+    });
 
     if (currentQuestionIndex < questions.length - 1) {
       setState(() {
@@ -544,7 +546,7 @@ class _QuizPageState extends State<QuizPage> {
           score: score,
           totalQuestions: questions.length,
           onRestart: restartQuiz,
-          incorrectAnswers: incorrectAnswers,
+          allAnswers: allAnswers,
           username: widget.username,
         ),
       ),
@@ -555,7 +557,7 @@ class _QuizPageState extends State<QuizPage> {
     setState(() {
       score = 0;
       currentQuestionIndex = 0;
-      incorrectAnswers.clear();
+      allAnswers.clear();
       initializeQuiz();
     });
   }
@@ -623,7 +625,7 @@ class ScorePage extends StatelessWidget {
   final int score;
   final int totalQuestions;
   final VoidCallback onRestart;
-  final List<Map<String, dynamic>> incorrectAnswers;
+  final List<Map<String, dynamic>> allAnswers;
   final String username;
 
   const ScorePage({
@@ -631,12 +633,14 @@ class ScorePage extends StatelessWidget {
     required this.score,
     required this.totalQuestions,
     required this.onRestart,
-    required this.incorrectAnswers,
+    required this.allAnswers,
     required this.username,
   });
 
   @override
   Widget build(BuildContext context) {
+    double percentage = (score / totalQuestions) * 100;
+
     return Scaffold(
       appBar: AppBar(
         title: const Text('Skor Akhir'),
@@ -652,38 +656,66 @@ class ScorePage extends StatelessWidget {
                 style:
                     const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
               ),
+              Text(
+                '(${percentage.toStringAsFixed(1)}%)',
+                style: const TextStyle(fontSize: 20),
+              ),
               const SizedBox(height: 20),
-              if (incorrectAnswers.isEmpty)
-                const Padding(
-                  padding: EdgeInsets.all(12.0),
-                  child: Text(
-                    'Selamat! Anda menjawab semua pertanyaan dengan benar!',
-                    style: TextStyle(fontSize: 20),
-                    textAlign: TextAlign.center,
+              const Text('Hasil Jawaban:',
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+              const SizedBox(height: 10),
+              ...allAnswers.asMap().entries.map((entry) {
+                int index = entry.key;
+                Map<String, dynamic> answer = entry.value;
+                return Card(
+                  margin:
+                      const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                  child: Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text('Soal ${index + 1}: ${answer['question']}',
+                            style: const TextStyle(
+                                fontWeight: FontWeight.bold, fontSize: 16)),
+                        const SizedBox(height: 8),
+                        Row(
+                          children: [
+                            Icon(
+                                answer['isCorrect']
+                                    ? Icons.check_circle
+                                    : Icons.close,
+                                color: answer['isCorrect']
+                                    ? Colors.green
+                                    : Colors.red),
+                            const SizedBox(width: 8),
+                            Expanded(
+                              child: Text(
+                                  'Jawaban Anda: ${answer['userAnswer']}',
+                                  style: TextStyle(
+                                      color: answer['isCorrect']
+                                          ? Colors.green
+                                          : Colors.red)),
+                            ),
+                          ],
+                        ),
+                        const SizedBox(height: 4),
+                        Row(
+                          children: [
+                            const Icon(Icons.info_outline, color: Colors.blue),
+                            const SizedBox(width: 8),
+                            Expanded(
+                              child: Text(
+                                  'Jawaban Benar: ${answer['correctAnswer']}',
+                                  style: const TextStyle(color: Colors.blue)),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
                   ),
-                )
-              else ...[
-                const Text('Jawaban yang Salah:',
-                    style:
-                        TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
-                const SizedBox(height: 10),
-                ...incorrectAnswers.map((answer) => Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text('Pertanyaan: ${answer['question']}',
-                              style:
-                                  const TextStyle(fontWeight: FontWeight.bold)),
-                          Text('Jawaban Anda: ${answer['userAnswer']}',
-                              style: const TextStyle(color: Colors.red)),
-                          Text('Jawaban Benar: ${answer['correctAnswer']}',
-                              style: const TextStyle(color: Colors.green)),
-                          const Divider(),
-                        ],
-                      ),
-                    )),
-              ],
+                );
+              }),
               const SizedBox(height: 20),
               ElevatedButton(
                 onPressed: () {

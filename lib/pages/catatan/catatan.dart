@@ -42,7 +42,7 @@ class _CatatanScreenState extends State<CatatanScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blue,
-        title: const Text("Catatan", style: TextStyle(color: Colors.white)),
+        title: const Text("catatan", style: TextStyle(color: Colors.white)),
         automaticallyImplyLeading: true,
         iconTheme: const IconThemeData(
           color: Colors.white,
@@ -131,7 +131,7 @@ class _CatatanScreenState extends State<CatatanScreen> {
               end: Alignment.bottomRight,
             ).createShader(Rect.fromLTWH(0, 0, bounds.width, bounds.height)),
             child: const Text(
-              "Selamat datang,",
+              "Selamat Datang,",
               style: TextStyle(
                 fontSize: 30,
                 fontWeight: FontWeight.bold,

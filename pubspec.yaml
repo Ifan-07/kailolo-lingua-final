@@ -1,7 +1,7 @@
 name: dictionary
-description: "A new Flutter project."
+description: "Aplikasi Kamus Terjemahan Bahasa Daerah Kailolo - Indonesia."
 
-publish_to: "none"
+publish_to: "Link"
 
 version: 0.1.0
 
@@ -15,7 +15,7 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_launcher_icons: ^0.13.1
-  font_awesome_flutter: ">= 4.7.0"
+  font_awesome_flutter: ^10.8.0
   http: ^1.2.1
   intl: ^0.19.0
   json_annotation: ^4.8.1
