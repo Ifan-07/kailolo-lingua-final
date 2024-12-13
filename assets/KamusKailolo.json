@@ -1,13 +1,5 @@
 ﻿[
   {
-    "pron": ["Hola"],
-    "kai": "Hola",
-    "ind": "Halo",
-    "kai_syns": ["-"], 
-    "ind_syns": ["-"],
-    "sents": ["Halo,Selamat datang"]
-  },
-  {
     "pron": ["Rahane"],
     "kai": "Rahan",
     "ind": "Abang",
